@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@import '~open-color/open-color';
+
+//  SHANGHAI METRO
+//  ───────────────────────────────────
+
+$sh-metro-list: (
+    'line-1': #e6002a,
+    'line-2': #8cc220,
+    'line-3': #fcd600,
+    'line-4': #461d84,
+    'line-5': #944d9a,
+    'line-6': #d40068,
+    'line-7': #ed6f00,
+    'line-8': #0095d9,
+    'line-9': #87caed,
+    'line-10': #c6afd4,
+    'line-11': #871c2b,
+    'line-12': #007a60,
+    'line-13': #e999c0,
+    'line-15': #9a982f,
+    'line-14': #c8b38e,
+    'line-16': #98d1c0,
+    'line-17': #b6766c,
+    'line-18': #c09453,
+    'line-41': #898989,
+    'line-66': #008b9a,
+);
+
+$sh-metro-line-1: map-get($sh-metro-list, 'line-1');
+$sh-metro-line-2: map-get($sh-metro-list, 'line-2');
+$sh-metro-line-3: map-get($sh-metro-list, 'line-3');
+$sh-metro-line-4: map-get($sh-metro-list, 'line-4');
+$sh-metro-line-5: map-get($sh-metro-list, 'line-5');
+$sh-metro-line-6: map-get($sh-metro-list, 'line-6');
+$sh-metro-line-7: map-get($sh-metro-list, 'line-7');
+$sh-metro-line-8: map-get($sh-metro-list, 'line-8');
+$sh-metro-line-9: map-get($sh-metro-list, 'line-9');
+$sh-metro-line-10: map-get($sh-metro-list, 'line-10');
+$sh-metro-line-11: map-get($sh-metro-list, 'line-11');
+$sh-metro-line-12: map-get($sh-metro-list, 'line-12');
+$sh-metro-line-13: map-get($sh-metro-list, 'line-13');
+$sh-metro-line-14: map-get($sh-metro-list, 'line-14');
+$sh-metro-line-15: map-get($sh-metro-list, 'line-15');
+$sh-metro-line-16: map-get($sh-metro-list, 'line-16');
+$sh-metro-line-17: map-get($sh-metro-list, 'line-17');
+$sh-metro-line-18: map-get($sh-metro-list, 'line-18');
+$sh-metro-line-41: map-get($sh-metro-list, 'line-41');
+$sh-metro-line-66: map-get($sh-metro-list, 'line-66');
+
+:root {
+    --sh-metro-line-1: $sh-metro-line-1;
+    --sh-metro-line-2: $sh-metro-line-2;
+    --sh-metro-line-3: $sh-metro-line-3;
+    --sh-metro-line-4: $sh-metro-line-4;
+    --sh-metro-line-5: $sh-metro-line-5;
+    --sh-metro-line-6: $sh-metro-line-6;
+    --sh-metro-line-7: $sh-metro-line-7;
+    --sh-metro-line-8: $sh-metro-line-8;
+    --sh-metro-line-9: $sh-metro-line-9;
+    --sh-metro-line-10: $sh-metro-line-10;
+    --sh-metro-line-11: $sh-metro-line-11;
+    --sh-metro-line-12: $sh-metro-line-12;
+    --sh-metro-line-13: $sh-metro-line-13;
+    --sh-metro-line-14: $sh-metro-line-14;
+    --sh-metro-line-15: $sh-metro-line-15;
+    --sh-metro-line-16: $sh-metro-line-16;
+    --sh-metro-line-17: $sh-metro-line-17;
+    --sh-metro-line-18: $sh-metro-line-18;
+    --sh-metro-line-41: $sh-metro-line-41;
+    --sh-metro-line-66: $sh-metro-line-66;
+}
+
+//  PANTONE COLOR OF THE YEAR
+//  ───────────────────────────────────
+
+$pantone-color-list: (
+    '15-4020TPG': #98b2d1,
+    '17-2031TPG': #c34e7c,
+    '19-1664TPG': #bd3645,
+    '14-4811TPG': #7fc9cb,
+    '17-1456TPG': #e2654d,
+    '15-5217TPG': #5bb3b0,
+    '13-1106TPG': #decebb,
+    '19-1557TPG': #9d363f,
+    '18-3943TPG': #6364a5,
+    '14-0848TPG': #ebbf57,
+    '15-5519TPG': #4db6ad,
+    '18-2120TPG': #d85a7b,
+    '17-1463TPG': #e34f33,
+    '17-5641TPG': #00997b,
+    '18-3224TPG': #b067a1,
+    '18-1438TPG': #975a58,
+    '15-3919TPG': #95aad3,
+    '13-1520TPG': #f8cdcd,
+    '15-0343TPG': #92b558,
+    '18-3838TPG': #6b5b95,
+    '16-1546TPG': #fc766a,
+    '19-4052TPG': #34558b,
+    '13-0647TPG': #f3e04e,
+    '17-5104TPG': #96999c,
+    '17-3938TPG': #696aad,
+);
+
+$pantone-2000: map-get($pantone-color-list, '15-4020TPG');
+$pantone-2001: map-get($pantone-color-list, '17-2031TPG');
+$pantone-2002: map-get($pantone-color-list, '19-1664TPG');
+$pantone-2003: map-get($pantone-color-list, '14-4811TPG');
+$pantone-2004: map-get($pantone-color-list, '17-1456TPG');
+$pantone-2005: map-get($pantone-color-list, '15-5217TPG');
+$pantone-2006: map-get($pantone-color-list, '13-1106TPG');
+$pantone-2007: map-get($pantone-color-list, '19-1557TPG');
+$pantone-2008: map-get($pantone-color-list, '18-3943TPG');
+$pantone-2009: map-get($pantone-color-list, '14-0848TPG');
+$pantone-2010: map-get($pantone-color-list, '15-5519TPG');
+$pantone-2011: map-get($pantone-color-list, '18-2120TPG');
+$pantone-2012: map-get($pantone-color-list, '17-1463TPG');
+$pantone-2013: map-get($pantone-color-list, '17-5641TPG');
+$pantone-2014: map-get($pantone-color-list, '18-3224TPG');
+$pantone-2015: map-get($pantone-color-list, '18-1438TPG');
+$pantone-2016-1: map-get($pantone-color-list, '15-3919TPG');
+$pantone-2016-2: map-get($pantone-color-list, '13-1520TPG');
+$pantone-2017: map-get($pantone-color-list, '15-0343TPG');
+$pantone-2018: map-get($pantone-color-list, '18-3838TPG');
+$pantone-2019: map-get($pantone-color-list, '16-1546TPG');
+$pantone-2020: map-get($pantone-color-list, '19-4052TPG');
+$pantone-2021-1: map-get($pantone-color-list, '13-0647TPG');
+$pantone-2021-2: map-get($pantone-color-list, '17-5104TPG');
+$pantone-2022: map-get($pantone-color-list, '17-3938TPG');
+
+:root {
+    --pantone-2000: $pantone-2000;
+    --pantone-2001: $pantone-2001;
+    --pantone-2002: $pantone-2002;
+    --pantone-2003: $pantone-2003;
+    --pantone-2004: $pantone-2004;
+    --pantone-2005: $pantone-2005;
+    --pantone-2006: $pantone-2006;
+    --pantone-2007: $pantone-2007;
+    --pantone-2008: $pantone-2008;
+    --pantone-2009: $pantone-2009;
+    --pantone-2010: $pantone-2010;
+    --pantone-2011: $pantone-2011;
+    --pantone-2012: $pantone-2012;
+    --pantone-2013: $pantone-2013;
+    --pantone-2014: $pantone-2014;
+    --pantone-2015: $pantone-2015;
+    --pantone-2016-1: $pantone-2016-1;
+    --pantone-2016-2: $pantone-2016-2;
+    --pantone-2017: $pantone-2017;
+    --pantone-2018: $pantone-2018;
+    --pantone-2019: $pantone-2019;
+    --pantone-2020: $pantone-2020;
+    --pantone-2021-1: $pantone-2021-1;
+    --pantone-2021-2: $pantone-2021-2;
+    --pantone-2022: $pantone-2022;
+}

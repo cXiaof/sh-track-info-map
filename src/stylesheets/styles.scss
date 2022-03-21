@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import '~normalize.css/normalize.css';
+
+@tailwind components;
+@tailwind utilities;
+
+@import 'colors';
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB',
+        'Microsoft YaHei', SimSun, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
