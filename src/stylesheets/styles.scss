@@ -5,16 +5,24 @@
 @tailwind utilities;
 
 @import 'colors';
+@import 'map';
 
 html {
     overflow: hidden;
 }
 
 body {
+    background-color: #fcf9f2;
     font-family: Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB',
         'Microsoft YaHei', SimSun, sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+#root {
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
 }
