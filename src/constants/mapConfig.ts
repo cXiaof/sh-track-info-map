@@ -4,7 +4,7 @@ window.map = new maptalks.Map('map', {
     center: [121.47362991, 31.23047407],
     zoom: 16,
     pitch: 15,
-    doubleClickZoom: false,
+    doubleClickZoom: window.debug,
     baseLayer: new maptalks.TileLayer('baseLayer', {
         subdomains: ['01', '02', '03', '04'],
         placeholder: true,

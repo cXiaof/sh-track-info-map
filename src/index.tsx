@@ -6,11 +6,13 @@ import './constants/mapConfig'
 
 import './stylesheets/styles.scss'
 
+import App from './containers/App'
+
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
     <React.StrictMode>
-        <div>App</div>
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 )
