@@ -14,15 +14,4 @@ window.map = new maptalks.Map('map', {
     }),
 })
 
-navigator.geolocation.getCurrentPosition(
-    (position) => {
-        const { longitude, latitude } = position.coords
-        window.map.animateTo({ center: [longitude, latitude] })
-    },
-    (error) => {
-        console.error(error)
-    },
-    { enableHighAccuracy: true, timeout: 7000, maximumAge: 45000 }
-)
-
 export {}
