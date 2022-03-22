@@ -1,9 +1,9 @@
 {
   "name": "sh-track-info-map",
   "version": "0.1.0",
-  "private": true,
   "homepage": ".",
   "author": "cXiaof",
+  "license": "Apache",
   "scripts": {
     "prepublish": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,js,jsx}\"",
     "start": "craco start",
@@ -15,7 +15,9 @@
     "test:coverage": "craco test --coverage",
     "c": "npm run test:coverage",
     "format": "prettier --loglevel silent --write \"{src,public}/**/*.{html,css,scss,js,jsx}\"",
-    "f": "npm run format"
+    "f": "npm run format",
+    "geo:risk": "node geo/risk.js",
+    "geo:track": "node geo/track.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -40,9 +42,11 @@
     "@craco/craco": "^6.4.3",
     "autoprefixer": "^10.4.4",
     "craco-alias": "^3.0.1",
+    "fs-extra": "^10.0.1",
     "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
+    "path": "^0.12.7",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "tailwindcss": "^3.0.23"
