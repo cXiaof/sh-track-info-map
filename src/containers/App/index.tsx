@@ -5,13 +5,16 @@ import { Modal } from 'antd-mobile'
 import Notice from './notice'
 import Zoom from '@@/containers/Zoom'
 import Location from '@@/containers/Location'
+import axios from 'axios'
+
+const { map, maptalks } = window
 
 const App = React.memo(() => {
     const animate2Location = useMemoizedFn(() => {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const { longitude, latitude } = position.coords
-                window.map.animateTo({
+                map.animateTo({
                     center: [longitude, latitude],
                     zoom: 16,
                 })
@@ -29,6 +32,8 @@ const App = React.memo(() => {
             content: <Notice />,
             onConfirm: animate2Location,
         })
+        renderRisk()
+        renderTrack()
     })
 
     return (
@@ -40,5 +45,12 @@ const App = React.memo(() => {
         </div>
     )
 })
+
+const renderRisk = async () => {
+    const result = await axios.get('./data/risk.geojson')
+    map.getLayer('risk').addGeometry(result.data)
+}
+
+const renderTrack = async () => {}
 
 export default App

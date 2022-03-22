@@ -5,7 +5,7 @@ document.oncontextmenu = () => {
 }
 
 const resizeTextSize = () => {
-    const designPx = 1080
+    const designPx = 414
     const { clientWidth, clientHeight } = document.documentElement
     const screenSize = Math.min(clientWidth, clientHeight)
     const scale = Math.max(1, screenSize / designPx)
