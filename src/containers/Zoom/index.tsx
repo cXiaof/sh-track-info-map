@@ -3,15 +3,13 @@ import { Divider } from 'antd-mobile'
 import { AddOutline, MinusOutline } from 'antd-mobile-icons'
 import { useMemoizedFn } from 'ahooks'
 
-const { map } = window
-
 const Zoom = React.memo(() => {
     const handleZoomIn = useMemoizedFn(() => {
-        map.zoomIn()
+        window.map.zoomIn()
     })
 
     const handleZoomOut = useMemoizedFn(() => {
-        map.zoomOut()
+        window.map.zoomOut()
     })
 
     return (

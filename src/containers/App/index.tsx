@@ -7,14 +7,12 @@ import Zoom from '@@/containers/Zoom'
 import Location from '@@/containers/Location'
 import axios from 'axios'
 
-const { map, maptalks } = window
-
 const App = React.memo(() => {
     const animate2Location = useMemoizedFn(() => {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const { longitude, latitude } = position.coords
-                map.animateTo({
+                window.map.animateTo({
                     center: [longitude, latitude],
                     zoom: 16,
                 })
@@ -48,9 +46,14 @@ const App = React.memo(() => {
 
 const renderRisk = async () => {
     const result = await axios.get('./data/risk.geojson')
-    map.getLayer('risk').addGeometry(result.data)
+    window.map.getLayer('risk').addGeometry(result.data)
 }
 
-const renderTrack = async () => {}
+const renderTrack = async () => {
+    const result = await axios.get('./data/track.geojson')
+    Object.values(result.data).forEach((track) =>
+        window.map.getLayer('track').addGeometry(track)
+    )
+}
 
 export default App

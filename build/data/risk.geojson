@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.551406, 31.168369]
+      },
+      "properties": {
+        "published_address": "浦东新区北蔡镇联勤村冯桥南宅",
+        "geocoded_address": "上海市浦东新区联勤村"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.215806, 31.431905]
+      },
+      "properties": {
+        "published_address": "嘉定区嘉定工业区娄塘路760弄",
+        "geocoded_address": "上海市嘉定区嘉定工业区娄塘路760弄"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.273533, 31.319578]
+      },
+      "properties": {
+        "published_address": "嘉定区马陆镇康年路261号工地宿舍",
+        "geocoded_address": "上海市嘉定区康年路"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.7325, 31.38375]
+      },
+      "properties": {
+        "published_address": "崇明区长兴镇长明村21队",
+        "geocoded_address": "上海市崇明区长明村"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.578428, 31.265113]
+      },
+      "properties": {
+        "published_address": "浦东新区沪东新村街道长岛路281号",
+        "geocoded_address": "上海市浦东新区长岛路|281号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.73915, 31.059181]
+      },
+      "properties": {
+        "published_address": "浦东新区惠南镇听悦路920号",
+        "geocoded_address": "上海市浦东新区惠南镇听悦路920号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.595133, 31.341665]
+      },
+      "properties": {
+        "published_address": "浦东新区日京路88号",
+        "geocoded_address": "上海市浦东新区日京路88号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.427758, 31.116367]
+      },
+      "properties": {
+        "published_address": "闵行区梅陇镇虹梅南路1578号",
+        "geocoded_address": "上海市闵行区梅陇镇虹梅南路1578号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.35336, 31.00692]
+      },
+      "properties": {
+        "published_address": "闵行区江川路街道剑川路综合服务中心工地宿舍",
+        "geocoded_address": "上海市闵行区剑川路"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.314379, 30.749154]
+      },
+      "properties": {
+        "published_address": "金山区金山卫镇学府路1811弄",
+        "geocoded_address": "上海市金山区金山卫镇学府路1811弄"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.48041, 31.209156]
+      },
+      "properties": {
+        "published_address": "黄浦区打浦桥街道局门后路9号",
+        "geocoded_address": "上海市黄浦区局门后路|9号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.479018, 31.211278]
+      },
+      "properties": {
+        "published_address": "黄浦区打浦桥街道顺昌路612弄20号",
+        "geocoded_address": "上海市黄浦区顺昌路612弄|20号"
+      }
+    }
+  ]
+}
