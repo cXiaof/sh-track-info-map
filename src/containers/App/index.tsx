@@ -3,6 +3,7 @@ import { useMemoizedFn, useMount } from 'ahooks'
 import { Modal } from 'antd-mobile'
 
 import Notice from './notice'
+import Zoom from '@@/containers/Zoom'
 import Location from '@@/containers/Location'
 
 const App = React.memo(() => {
@@ -32,7 +33,8 @@ const App = React.memo(() => {
 
     return (
         <div className='text-primary'>
-            <div className='absolute right-0 bottom-0 pr-5 pb-11'>
+            <div className='absolute right-0 bottom-0 pr-5 pb-11 space-y-4'>
+                <Zoom />
                 <Location animate2Location={animate2Location} />
             </div>
         </div>
