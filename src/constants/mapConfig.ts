@@ -5,7 +5,7 @@ window.map = new window.maptalks.Map('map', {
     zoom: 16,
     pitch: 15,
     scaleControl: {
-        position: { bottom: '1', right: '0' },
+        position: { bottom: '1', right: '20' },
         metric: true,
         imperial: false,
     },
