@@ -21,8 +21,15 @@ body {
     box-sizing: border-box;
 }
 
+:root:root {
+    --adm-color-primary: var(--pantone-2022);
+}
+
 #root {
     @apply absolute;
     @apply top-0;
     @apply left-0;
+    @apply w-screen;
+    @apply h-screen;
+    @apply pointer-events-none;
 }

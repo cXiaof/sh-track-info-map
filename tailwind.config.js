@@ -4,7 +4,11 @@ module.exports = {
     },
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
-        extend: {},
+        extend: {
+            textColor: {
+                primary: 'var(--pantone-2022)',
+            },
+        },
     },
     plugins: [],
 }
