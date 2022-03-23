@@ -19,28 +19,28 @@ const Legend = React.memo(() => {
                 style={{ color: '#c2410c' }}
             >
                 <ExclamationCircleIcon className='h-4' />
-                <span>3天以内轨迹</span>
+                <span>{`发布<3天`}</span>
             </div>
             <div
                 className='flex items-center space-x-1'
                 style={{ color: '#f97316' }}
             >
                 <ExclamationCircleIcon className='h-4' />
-                <span>7天以内轨迹</span>
+                <span>{`发布<7天`}</span>
             </div>
             <div
                 className='flex items-center space-x-1'
                 style={{ color: '#fdba74' }}
             >
                 <ExclamationCircleIcon className='h-4' />
-                <span>14天以内轨迹</span>
+                <span>{`发布<14天`}</span>
             </div>
             <div
                 className='flex items-center space-x-1'
                 style={{ color: '#ffedd5' }}
             >
                 <ExclamationCircleIcon className='h-4' />
-                <span>14天以上轨迹</span>
+                <span>{`发布≥14天`}</span>
             </div>
         </div>
     )
