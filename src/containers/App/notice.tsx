@@ -3,7 +3,7 @@ import { Divider } from 'antd-mobile'
 
 const Notice = React.memo(() => {
     return (
-        <div className='pl-2 break-all'>
+        <div>
             <p className='text-center font-semibold mt-0'>制作目的</p>
             <div className='indent-4'>
                 制作本页是为方便<b>没有或不会使用</b>
@@ -16,12 +16,12 @@ const Notice = React.memo(() => {
             </div>
             <div className='indent-4'>
                 会使用大厂疫情地图的朋友请<b>关闭</b>本页，在<b>百度/高德</b>
-                搜索
-                <b>“疫情地图”</b>了解疫情信息，谢谢。
+                搜索“
+                <b>疫情地图</b>”了解疫情信息，谢谢。
             </div>
             <Divider />
             <p className='text-center font-semibold mb-0'>数据源说明</p>
-            <ol className='pl-4'>
+            <ol className='pl-5'>
                 <li>
                     本页地址数据全部来源于<b>上海发布</b>
                     ，除标点符号修整外<b>未改动</b>任何信息。
