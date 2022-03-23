@@ -5,6 +5,50 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [121.556073, 31.171023]
+      },
+      "properties": {
+        "published_address": "浦东新区北蔡镇鹏飞路411弄6号",
+        "geocoded_address": "上海市浦东新区北蔡镇鹏飞路411弄6号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.290151, 31.242066]
+      },
+      "properties": {
+        "published_address": "嘉定区江桥镇增建村柴中村民组",
+        "geocoded_address": "上海市嘉定区增建村"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.434136, 31.075312]
+      },
+      "properties": {
+        "published_address": "闵行区梅陇镇许泾村八组",
+        "geocoded_address": "上海市闵行区许泾村8组"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.714608, 31.38134]
+      },
+      "properties": {
+        "published_address": "崇明区长兴镇新港村15队",
+        "geocoded_address": "上海市崇明区新港村"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [121.551406, 31.168369]
       },
       "properties": {
@@ -43,17 +87,6 @@
       "properties": {
         "published_address": "崇明区长兴镇长明村21队",
         "geocoded_address": "上海市崇明区长明村"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [121.578428, 31.265113]
-      },
-      "properties": {
-        "published_address": "浦东新区沪东新村街道长岛路281号",
-        "geocoded_address": "上海市浦东新区长岛路|281号"
       }
     },
     {
