@@ -15,9 +15,10 @@
     "test:coverage": "craco test --coverage",
     "c": "npm run test:coverage",
     "format": "prettier --loglevel silent --write \"{src,public}/**/*.{html,css,scss,js,jsx}\"",
+    "format:geojson": "prettier --loglevel silent --write \"public/data/*.geojson\"",
     "f": "npm run format",
-    "geo:risk": "node geo/risk.js && yarn f",
-    "geo:track": "node geo/track.js && yarn f"
+    "geo:risk": "node geo/risk.js && npm run format:geojson",
+    "geo:track": "node geo/track.js && npm run format:geojson"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -25,11 +26,11 @@
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.1",
-    "@types/node": "^17.0.22",
-    "@types/react": "^17.0.20",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.42",
     "@types/react-dom": "^17.0.9",
     "ahooks": "^3.1.14",
-    "antd-mobile": "^5.7.2",
+    "antd-mobile": "^5.8.0",
     "axios": "^0.26.1",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.0",

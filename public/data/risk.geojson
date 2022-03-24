@@ -5,6 +5,39 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [121.427627, 31.115935]
+      },
+      "properties": {
+        "published_address": "闵行区梅陇镇行南村三队",
+        "geocoded_address": "上海市闵行区行南村"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.330245, 31.226634]
+      },
+      "properties": {
+        "published_address": "华漕镇许浦村三队",
+        "geocoded_address": "上海市闵行区许浦村3队"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.622679, 31.141287]
+      },
+      "properties": {
+        "published_address": "浦东新区康桥镇苗桥路935弄19号",
+        "geocoded_address": "上海市浦东新区康桥镇苗桥路935弄"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [121.556073, 31.171023]
       },
       "properties": {
