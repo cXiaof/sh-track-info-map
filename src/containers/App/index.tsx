@@ -1,12 +1,13 @@
 import React from 'react'
 import { useMemoizedFn, useMount } from 'ahooks'
 import { Modal } from 'antd-mobile'
+import axios from 'axios'
+import dayjs from 'dayjs'
 
 import Notice from './notice'
 import Legend from '@@/containers/Legend'
 import Zoom from '@@/containers/Zoom'
 import Location from '@@/containers/Location'
-import axios from 'axios'
 
 const App = React.memo(() => {
     const animate2Location = useMemoizedFn(() => {
@@ -48,13 +49,15 @@ const App = React.memo(() => {
     )
 })
 
+const time = dayjs().valueOf()
+
 const renderRisk = async () => {
-    const result = await axios.get('./data/risk.geojson')
+    const result = await axios.get(`./data/risk.geojson?_t=${time}`)
     window.map.getLayer('risk').addGeometry(result.data)
 }
 
 const renderTrack = async () => {
-    const result = await axios.get('./data/track.geojson')
+    const result = await axios.get(`./data/track.geojson?_t=${time}`)
     Object.values(result.data).forEach((track) =>
         window.map.getLayer('track').addGeometry(track)
     )

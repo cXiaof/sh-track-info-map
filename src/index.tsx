@@ -21,7 +21,9 @@ window.map.on('baselayerload', () => {
     )
 })
 
-axios.get('./data/update_time.json').then(({ data }) => {
+const time = dayjs().valueOf()
+
+axios.get(`./data/update_time.json?_t=${time}`).then(({ data }) => {
     document.title += dayjs(data).format('(更新至M月D日)')
 })
 
