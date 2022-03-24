@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMemoizedFn, useMount } from 'ahooks'
+import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
 import { Modal } from 'antd-mobile'
 import axios from 'axios'
 import dayjs from 'dayjs'
@@ -9,7 +9,12 @@ import Legend from '@@/containers/Legend'
 import Zoom from '@@/containers/Zoom'
 import Location from '@@/containers/Location'
 
+const time = dayjs().valueOf()
+
 const App = React.memo(() => {
+    const [riskOver, riskOverActions] = useBoolean(false)
+    const [trackOver, trackOverActions] = useBoolean(false)
+
     const animate2Location = useMemoizedFn(() => {
         navigator.geolocation.getCurrentPosition(
             (position) => {
@@ -26,6 +31,20 @@ const App = React.memo(() => {
         )
     })
 
+    const renderRisk = useMemoizedFn(async () => {
+        const result = await axios.get(`./data/risk.geojson?_t=${time}`)
+        window.map.getLayer('risk').addGeometry(result.data)
+        riskOverActions.setTrue()
+    })
+
+    const renderTrack = useMemoizedFn(async () => {
+        const result = await axios.get(`./data/track.geojson?_t=${time}`)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track').addGeometry(track)
+        )
+        trackOverActions.setTrue()
+    })
+
     useMount(() => {
         Modal.clear()
         Modal.alert({
@@ -39,7 +58,7 @@ const App = React.memo(() => {
     return (
         <div>
             <div className='absolute left-0 bottom-0 pl-5 pb-11 space-y-4'>
-                <Legend />
+                <Legend riskOver={riskOver} trackOver={trackOver} />
             </div>
             <div className='absolute text-primary right-0 bottom-0 pr-5 pb-11 space-y-4'>
                 <Zoom />
@@ -48,19 +67,5 @@ const App = React.memo(() => {
         </div>
     )
 })
-
-const time = dayjs().valueOf()
-
-const renderRisk = async () => {
-    const result = await axios.get(`./data/risk.geojson?_t=${time}`)
-    window.map.getLayer('risk').addGeometry(result.data)
-}
-
-const renderTrack = async () => {
-    const result = await axios.get(`./data/track.geojson?_t=${time}`)
-    Object.values(result.data).forEach((track) =>
-        window.map.getLayer('track').addGeometry(track)
-    )
-}
 
 export default App
