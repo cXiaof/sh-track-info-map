@@ -9,7 +9,6 @@ window.map = new window.maptalks.Map('map', {
         metric: true,
         imperial: false,
     },
-    doubleClickZoom: window.debug,
     baseLayer: new window.maptalks.TileLayer('baseLayer', {
         subdomains: ['01', '02', '03', '04'],
         placeholder: true,

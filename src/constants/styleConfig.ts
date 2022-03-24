@@ -76,8 +76,8 @@ export const trackStyle = [
                 textFill: '#ffedd5',
                 textSize: {
                     stops: [
-                        [16, 0],
-                        [16, 12],
+                        [15, 0],
+                        [15.1, 12],
                     ],
                 },
                 textDy: 12,
