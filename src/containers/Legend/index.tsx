@@ -25,25 +25,33 @@ const Legend = React.memo(() => {
 
     const renderTrack3 = useMemoizedFn(async () => {
         const result = await axios.get(`./data/track_3.geojson?_t=${time}`)
-        renderTrackGeo(result)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track_long').addGeometry(track)
+        )
         track3Actions.setTrue()
     })
 
     const renderTrack7 = useMemoizedFn(async () => {
         const result = await axios.get(`./data/track_7.geojson?_t=${time}`)
-        renderTrackGeo(result)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track_14').addGeometry(track)
+        )
         track7Actions.setTrue()
     })
 
     const renderTrack14 = useMemoizedFn(async () => {
         const result = await axios.get(`./data/track_14.geojson?_t=${time}`)
-        renderTrackGeo(result)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track_7').addGeometry(track)
+        )
         track14Actions.setTrue()
     })
 
     const renderTrackLong = useMemoizedFn(async () => {
         const result = await axios.get(`./data/track_long.geojson?_t=${time}`)
-        renderTrackGeo(result)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track_3').addGeometry(track)
+        )
         trackLongActions.setTrue()
     })
 
@@ -115,11 +123,5 @@ const Legend = React.memo(() => {
         </div>
     )
 })
-
-const renderTrackGeo = ({ data }: any) => {
-    Object.values(data).forEach((track) =>
-        window.map.getLayer('track').addGeometry(track)
-    )
-}
 
 export default Legend

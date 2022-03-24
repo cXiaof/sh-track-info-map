@@ -1,4 +1,4 @@
-import { riskStyle, trackStyle } from './styleConfig'
+import * as styles from './styleConfig'
 
 window.map = new window.maptalks.Map('map', {
     center: [121.47362991, 31.23047407],
@@ -17,8 +17,26 @@ window.map = new window.maptalks.Map('map', {
             'https://wprd{s}.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=7',
     }),
     layers: [
-        new window.maptalks.VectorLayer('track', { style: trackStyle }),
-        new window.maptalks.VectorLayer('risk', { style: riskStyle }),
+        new window.maptalks.VectorLayer('risk', {
+            style: { symbol: styles.riskSymbol },
+            zIndex: 5,
+        }),
+        new window.maptalks.VectorLayer('track_long', {
+            style: { symbol: styles.trackSymbolLong },
+            zIndex: 1,
+        }),
+        new window.maptalks.VectorLayer('track_14', {
+            style: { symbol: styles.trackSymbol14 },
+            zIndex: 2,
+        }),
+        new window.maptalks.VectorLayer('track_7', {
+            style: { symbol: styles.trackSymbol7 },
+            zIndex: 3,
+        }),
+        new window.maptalks.VectorLayer('track_3', {
+            style: { symbol: styles.trackSymbol3 },
+            zIndex: 4,
+        }),
     ],
 })
 
