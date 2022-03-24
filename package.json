@@ -9,7 +9,7 @@
     "start": "craco start",
     "s": "npm run start",
     "build": "craco build",
-    "b": "npm run build",
+    "b": "npm run build && npm run geo:compress",
     "test": "craco test",
     "t": "npm run test",
     "test:coverage": "craco test --coverage",
@@ -18,7 +18,8 @@
     "format:geojson": "prettier --loglevel silent --write \"public/data/*.geojson\"",
     "f": "npm run format",
     "geo:risk": "node geo/risk.js && npm run format:geojson",
-    "geo:track": "node geo/track.js && npm run format:geojson"
+    "geo:track": "node geo/track.js && npm run format:geojson",
+    "geo:compress": "node geo/compress.js"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
