@@ -23,36 +23,36 @@ const Legend = React.memo(() => {
         riskOverActions.setTrue()
     })
 
-    const renderTrack3 = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_3.geojson?_t=${time}`)
+    const renderTrackLong = useMemoizedFn(async () => {
+        const result = await axios.get(`./data/track_long.geojson?_t=${time}`)
         Object.values(result.data).forEach((track) =>
             window.map.getLayer('track_long').addGeometry(track)
         )
-        track3Actions.setTrue()
-    })
-
-    const renderTrack7 = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_7.geojson?_t=${time}`)
-        Object.values(result.data).forEach((track) =>
-            window.map.getLayer('track_14').addGeometry(track)
-        )
-        track7Actions.setTrue()
+        trackLongActions.setTrue()
     })
 
     const renderTrack14 = useMemoizedFn(async () => {
         const result = await axios.get(`./data/track_14.geojson?_t=${time}`)
         Object.values(result.data).forEach((track) =>
-            window.map.getLayer('track_7').addGeometry(track)
+            window.map.getLayer('track_14').addGeometry(track)
         )
         track14Actions.setTrue()
     })
 
-    const renderTrackLong = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_long.geojson?_t=${time}`)
+    const renderTrack7 = useMemoizedFn(async () => {
+        const result = await axios.get(`./data/track_7.geojson?_t=${time}`)
+        Object.values(result.data).forEach((track) =>
+            window.map.getLayer('track_7').addGeometry(track)
+        )
+        track7Actions.setTrue()
+    })
+
+    const renderTrack3 = useMemoizedFn(async () => {
+        const result = await axios.get(`./data/track_3.geojson?_t=${time}`)
         Object.values(result.data).forEach((track) =>
             window.map.getLayer('track_3').addGeometry(track)
         )
-        trackLongActions.setTrue()
+        track3Actions.setTrue()
     })
 
     useMount(() => {
