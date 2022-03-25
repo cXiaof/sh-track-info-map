@@ -40,33 +40,31 @@ export const riskSymbol = [
     },
 ]
 
-const getPointSymbol = (markerFill: string, markerLineColor: string) => ({
-    markerType: 'ellipse',
-    markerFill,
-    markerFillOpacity: 1,
-    markerLineColor,
-    markerLineWidth: 1,
-    markerLineOpacity: 1,
-    markerWidth: {
-        stops: [
-            [8, window.getTextSize(4)],
-            [22, window.getTextSize(11)],
-        ],
+const getPointSymbol = (fill: string, line: string) => [
+    {
+        markerType: 'ellipse',
+        markerFill: fill,
+        markerFillOpacity: 1,
+        markerLineColor: line,
+        markerLineWidth: 1,
+        markerLineOpacity: 1,
+        markerWidth: {
+            stops: [
+                [8, window.getTextSize(4)],
+                [22, window.getTextSize(11)],
+            ],
+        },
+        markerHeight: {
+            stops: [
+                [8, window.getTextSize(4)],
+                [22, window.getTextSize(11)],
+            ],
+        },
+        markerOpacity: 1,
     },
-    markerHeight: {
-        stops: [
-            [8, window.getTextSize(4)],
-            [22, window.getTextSize(11)],
-        ],
-    },
-    markerOpacity: 1,
-})
-
-export const trackSymbolLong = [
-    getPointSymbol('#ffedd5', '#ffffff'),
     {
         textName: '{published_address}',
-        textFill: '#ffedd5',
+        textFill: fill,
         textSize: {
             stops: [
                 [15, 0],
@@ -79,54 +77,8 @@ export const trackSymbolLong = [
         textHaloFill: 'white',
     },
 ]
-export const trackSymbol14 = [
-    getPointSymbol('#fdba74', '#ffedd5'),
-    {
-        textName: '{published_address}',
-        textFill: '#fdba74',
-        textSize: {
-            stops: [
-                [16, 0],
-                [16, 12],
-            ],
-        },
-        textDy: 12,
-        textWeight: 'bold',
-        textHaloRadius: 2,
-        textHaloFill: 'white',
-    },
-]
-export const trackSymbol7 = [
-    getPointSymbol('#f97316', '#fdba74'),
-    {
-        textName: '{published_address}',
-        textFill: '#f97316',
-        textSize: {
-            stops: [
-                [16, 0],
-                [16, 12],
-            ],
-        },
-        textDy: 12,
-        textWeight: 'bold',
-        textHaloRadius: 2,
-        textHaloFill: 'white',
-    },
-]
-export const trackSymbol3 = [
-    getPointSymbol('#c2410c', '#f97316'),
-    {
-        textName: '{published_address}',
-        textFill: '#c2410c',
-        textSize: {
-            stops: [
-                [16, 0],
-                [16, 12],
-            ],
-        },
-        textDy: 12,
-        textWeight: 'bold',
-        textHaloRadius: 2,
-        textHaloFill: 'white',
-    },
-]
+
+export const trackSymbolLong = getPointSymbol('#ffedd5', '#ffffff')
+export const trackSymbol14 = getPointSymbol('#fdba74', '#ffedd5')
+export const trackSymbol7 = getPointSymbol('#f97316', '#fdba74')
+export const trackSymbol3 = getPointSymbol('#c2410c', '#f97316')
