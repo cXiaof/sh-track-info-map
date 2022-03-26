@@ -17,7 +17,7 @@
     "format": "prettier --loglevel silent --write \"{src,public}/**/*.{html,css,scss,js,jsx}\"",
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "f": "npm run format",
-    "geo:risk": "node geo/risk.js && npm run format:geojson",
+    "geo:risk": "node geo/risk.js",
     "geo:track": "node geo/track.js && npm run format:geojson"
   },
   "dependencies": {
@@ -51,7 +51,7 @@
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
     "postcss": "^8.4.12",
-    "prettier": "^2.6.0",
+    "prettier": "^2.6.1",
     "tailwindcss": "^3.0.23"
   },
   "eslintConfig": {

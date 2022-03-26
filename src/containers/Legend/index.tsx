@@ -5,10 +5,8 @@ import {
 } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
 import { DotLoading } from 'antd-mobile'
-import dayjs from 'dayjs'
-import axios from 'axios'
 
-const time = dayjs().valueOf()
+const time = new Date().getTime()
 
 const Legend = React.memo(() => {
     const [riskOver, riskOverActions] = useBoolean(false)
@@ -18,38 +16,43 @@ const Legend = React.memo(() => {
     const [trackLong, trackLongActions] = useBoolean(false)
 
     const renderRisk = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/risk.geojson?_t=${time}`)
-        window.map.getLayer('risk').addGeometry(result.data)
+        const result = await fetch(`./data/risk.geojson?_t=${time}`)
+        const features = await result.json()
+        window.map.getLayer('risk').addGeometry(features)
         riskOverActions.setTrue()
     })
 
     const renderTrackLong = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_long.geojson?_t=${time}`)
-        Object.values(result.data).forEach((track) =>
+        const result = await fetch(`./data/track_long.geojson?_t=${time}`)
+        const features = await result.json()
+        Object.values(features).forEach((track) =>
             window.map.getLayer('track_long').addGeometry(track)
         )
         trackLongActions.setTrue()
     })
 
     const renderTrack14 = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_14.geojson?_t=${time}`)
-        Object.values(result.data).forEach((track) =>
+        const result = await fetch(`./data/track_14.geojson?_t=${time}`)
+        const features = await result.json()
+        Object.values(features).forEach((track) =>
             window.map.getLayer('track_14').addGeometry(track)
         )
         track14Actions.setTrue()
     })
 
     const renderTrack7 = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_7.geojson?_t=${time}`)
-        Object.values(result.data).forEach((track) =>
+        const result = await fetch(`./data/track_7.geojson?_t=${time}`)
+        const features = await result.json()
+        Object.values(features).forEach((track) =>
             window.map.getLayer('track_7').addGeometry(track)
         )
         track7Actions.setTrue()
     })
 
     const renderTrack3 = useMemoizedFn(async () => {
-        const result = await axios.get(`./data/track_3.geojson?_t=${time}`)
-        Object.values(result.data).forEach((track) =>
+        const result = await fetch(`./data/track_3.geojson?_t=${time}`)
+        const features = await result.json()
+        Object.values(features).forEach((track) =>
             window.map.getLayer('track_3').addGeometry(track)
         )
         track3Actions.setTrue()

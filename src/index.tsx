@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import axios from 'axios'
-import dayjs from 'dayjs'
 
 import './constants/projectConfig'
 import './constants/mapConfig'
@@ -21,10 +19,13 @@ window.map.on('baselayerload', () => {
     )
 })
 
-const time = dayjs().valueOf()
-
-axios.get(`./data/update_time.json?_t=${time}`).then(({ data }) => {
-    document.title += dayjs(data).format('(更新至M月D日)')
-})
+fetch(`./data/update_time.json?_t=${Math.random()}`)
+    .then((res) => res.json())
+    .then((time) => {
+        const date = new Date(time)
+        const month = date.getMonth() + 1
+        const day = date.getDate()
+        document.title += `(更新至${month}月${day}日)`
+    })
 
 reportWebVitals()
