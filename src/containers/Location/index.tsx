@@ -8,7 +8,7 @@ export interface LocationProps {
 const Location = React.memo(({ animate2Location }: LocationProps) => {
     return (
         <div
-            className='h-10 w-10 text-2xl bg-white rounded-full pointer-events-auto flex justify-center items-center'
+            className='h-10 w-10 text-2xl bg-white bg-opacity-70 rounded-full pointer-events-auto flex justify-center items-center'
             onClick={animate2Location}
         >
             <SupportIcon

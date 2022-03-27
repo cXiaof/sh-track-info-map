@@ -67,7 +67,7 @@ const Legend = React.memo(() => {
     })
 
     return (
-        <div className='p-2 text-base bg-white rounded-lg pointer-events-auto'>
+        <div className='p-2 text-base bg-white bg-opacity-70 rounded-lg pointer-events-auto'>
             <div
                 className='flex items-center space-x-[2px]'
                 style={{ color: '#696aad' }}
