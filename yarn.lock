@@ -1178,9 +1178,9 @@
   integrity sha512-Y30eVMcZva8o84c0HcXAtDO4BEzPJMvF6+B7x7urL2xbAqVsGJhojOyHLaoQHQYjb6OkqRq5kO+zeySycQwKqg==
 
 "@floating-ui/dom@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-0.4.1.tgz#3e164482d7f036527f65a794bdf054d2cc44fcbf"
-  integrity sha512-VAdIkn+zc4VB3pSemBk2JwjXlbVEBUbQft4V5jGpUeA9Vxd1fQD5eL3dMIMLVW003NYCOoW42JjjyBPNTpr8uQ==
+  version "0.4.2"
+  resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-0.4.2.tgz#5c34a19f23a0d72af564e45e5af8000b45318e60"
+  integrity sha512-2/4vOhMAujkMmGqGX1Gut84phe5MNfk1kGeM+RSTJCpeR0SWR2/RR+/f1r1msOvTQa28wn7HEhxGe71CjYY/vw==
   dependencies:
     "@floating-ui/core" "^0.6.1"
 
@@ -2432,21 +2432,7 @@ ahooks-v3-count@^1.0.0:
   resolved "https://registry.npmjs.org/ahooks-v3-count/-/ahooks-v3-count-1.0.0.tgz#ddeb392e009ad6e748905b3cbf63a9fd8262ca80"
   integrity sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==
 
-ahooks@^3.1.14:
-  version "3.1.14"
-  resolved "https://registry.npmjs.org/ahooks/-/ahooks-3.1.14.tgz#b72dffb21272b7001112f90552d37209cea6502f"
-  integrity sha512-Pk9BmfN+nUs7Zh5aniDY2J6K+JGQDBojjwURG2kd/w4+7FQV9qRAs0MQWM6s/FB8GlvdpNtiH++NDXSpxcBqvA==
-  dependencies:
-    "@types/js-cookie" "^2.x.x"
-    ahooks-v3-count "^1.0.0"
-    dayjs "^1.9.1"
-    intersection-observer "^0.12.0"
-    js-cookie "^2.x.x"
-    lodash "^4.17.21"
-    resize-observer-polyfill "^1.5.1"
-    screenfull "^5.0.0"
-
-ahooks@^3.2.0:
+ahooks@^3.1.14, ahooks@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/ahooks/-/ahooks-3.2.0.tgz#e610a65c534992d05497aa94eb0816802ffa88a3"
   integrity sha512-QzwiEhMyI5h7M3VG9NS27cfPllE6wSuKso6NASYeivZZGDrg1PxZ/0tHQ/rVwu0BSYDA9LNUBkSYoHTlOwOjvg==
@@ -2550,10 +2536,10 @@ antd-mobile-v5-count@^1.0.1:
   resolved "https://registry.npmjs.org/antd-mobile-v5-count/-/antd-mobile-v5-count-1.0.1.tgz#85f20c46d1635c24e856bcf5ad55e8c98e44a523"
   integrity sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==
 
-antd-mobile@^5.8.1:
-  version "5.8.1"
-  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-5.8.1.tgz#8c3b242cc3089c719ff88b5c1acbeea9f89b3809"
-  integrity sha512-bFGWnXcenFcPR8vyi97h5GgdkCF5BIMOTScNkBtdoib3qDfMCxMwWKiu7h8/JL/5OxBJs8hvVOocLn/JZlM7tw==
+antd-mobile@^5.8.2:
+  version "5.8.2"
+  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-5.8.2.tgz#11985d19bc426bcb47688ec6ad37dcbc95f4ab8b"
+  integrity sha512-WdPf3Kt0N81qezmtdu4qAXQp6fZFCTkQtJbfTEGd776bikAxEH6ce5Z+999XI05Cyyt4JeNtVMQkanzl8dtazg==
   dependencies:
     "@floating-ui/dom" "^0.4.1"
     "@react-spring/web" "^9.4.4"
