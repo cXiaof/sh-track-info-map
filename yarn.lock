@@ -2375,10 +2375,10 @@ ahooks-v3-count@^1.0.0:
   resolved "https://registry.npmjs.org/ahooks-v3-count/-/ahooks-v3-count-1.0.0.tgz#ddeb392e009ad6e748905b3cbf63a9fd8262ca80"
   integrity sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==
 
-ahooks@^3.1.14, ahooks@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/ahooks/-/ahooks-3.2.0.tgz#e610a65c534992d05497aa94eb0816802ffa88a3"
-  integrity sha512-QzwiEhMyI5h7M3VG9NS27cfPllE6wSuKso6NASYeivZZGDrg1PxZ/0tHQ/rVwu0BSYDA9LNUBkSYoHTlOwOjvg==
+ahooks@^3.1.14, ahooks@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/ahooks/-/ahooks-3.3.0.tgz#7f3f126500068b74c4db6cd3c8a0b7b4feed71f8"
+  integrity sha512-X1TIXvRNgWrx9Cfxa3QDnHttnphT1otSCNjELs1Yf88cPHt6Fp96MWHx83Zhkb3wcRbWzeQHQTISDTKq4itIbw==
   dependencies:
     "@types/js-cookie" "^2.x.x"
     ahooks-v3-count "^1.0.0"
@@ -2479,10 +2479,10 @@ antd-mobile-v5-count@^1.0.1:
   resolved "https://registry.npmjs.org/antd-mobile-v5-count/-/antd-mobile-v5-count-1.0.1.tgz#85f20c46d1635c24e856bcf5ad55e8c98e44a523"
   integrity sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==
 
-antd-mobile@^5.9.1:
-  version "5.9.1"
-  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-5.9.1.tgz#b258c32e065133d5922e33d7f4c4c8f486b72ce8"
-  integrity sha512-w2eP9KjbpEjjBkS1p7Va0Fpt/wUzFgEfkJZplv/tM+FmTVDJMTwNfOOMPqxHAT0vOiGF+49in442TdasMj4ljQ==
+antd-mobile@^5.9.2:
+  version "5.9.2"
+  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-5.9.2.tgz#d97098879f8a6067d28f9637cc444419ac845c38"
+  integrity sha512-Gk7t0oyWTdTh2m11axl5+FtrWvMJz8JChRtEZXU5kjFP1DVtA3G46mVTQYnQLVeaAVMKTxXLt4FOYLYFFCPg/A==
   dependencies:
     "@floating-ui/dom" "^0.4.2"
     "@react-spring/web" "^9.4.4"
