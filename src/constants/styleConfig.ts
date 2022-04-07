@@ -79,6 +79,7 @@ const getPointSymbol = (fill: string, line: string) => [
 ]
 
 export const trackSymbolLong = getPointSymbol('#ffedd5', '#ffffff')
-export const trackSymbol14 = getPointSymbol('#fdba74', '#ffedd5')
-export const trackSymbol7 = getPointSymbol('#f97316', '#fdba74')
-export const trackSymbol3 = getPointSymbol('#c2410c', '#f97316')
+export const trackSymbolM = getPointSymbol('#fdba74', '#ffedd5')
+export const trackSymbol14 = getPointSymbol('#f97316', '#fdba74')
+export const trackSymbol7 = getPointSymbol('#c2410c', '#f97316')
+export const trackSymbol3 = getPointSymbol('#7c2d12', '#c2410c')

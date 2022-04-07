@@ -19,23 +19,27 @@ window.map = new window.maptalks.Map('map', {
     layers: [
         new window.maptalks.VectorLayer('risk', {
             style: { symbol: styles.riskSymbol },
-            zIndex: 5,
+            zIndex: 9,
         }),
         new window.maptalks.VectorLayer('track_long', {
             style: { symbol: styles.trackSymbolLong },
             zIndex: 1,
         }),
+        new window.maptalks.VectorLayer('track_m', {
+            style: { symbol: styles.trackSymbolM },
+            zIndex: 2,
+        }),
         new window.maptalks.VectorLayer('track_14', {
             style: { symbol: styles.trackSymbol14 },
-            zIndex: 2,
+            zIndex: 3,
         }),
         new window.maptalks.VectorLayer('track_7', {
             style: { symbol: styles.trackSymbol7 },
-            zIndex: 3,
+            zIndex: 4,
         }),
         new window.maptalks.VectorLayer('track_3', {
             style: { symbol: styles.trackSymbol3 },
-            zIndex: 4,
+            zIndex: 5,
         }),
     ],
 })

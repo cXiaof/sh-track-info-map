@@ -13,6 +13,7 @@ const Legend = React.memo(() => {
     const [track3, track3Actions] = useBoolean(false)
     const [track7, track7Actions] = useBoolean(false)
     const [track14, track14Actions] = useBoolean(false)
+    const [trackM, trackMActions] = useBoolean(false)
     const [trackLong, trackLongActions] = useBoolean(false)
 
     const renderRisk = useMemoizedFn(async () => {
@@ -29,6 +30,15 @@ const Legend = React.memo(() => {
             window.map.getLayer('track_long').addGeometry(track)
         )
         trackLongActions.setTrue()
+    })
+
+    const renderTrackM = useMemoizedFn(async () => {
+        const result = await fetch(`./data/track_m.geojson?_t=${time}`)
+        const features = await result.json()
+        Object.values(features).forEach((track) =>
+            window.map.getLayer('track_m').addGeometry(track)
+        )
+        trackMActions.setTrue()
     })
 
     const renderTrack14 = useMemoizedFn(async () => {
@@ -63,6 +73,7 @@ const Legend = React.memo(() => {
         renderTrack3()
         renderTrack7()
         renderTrack14()
+        renderTrackM()
         renderTrackLong()
     })
 
@@ -81,7 +92,7 @@ const Legend = React.memo(() => {
             </div>
             <div
                 className='flex items-center space-x-1'
-                style={{ color: '#c2410c' }}
+                style={{ color: '#7c2d12' }}
             >
                 {track3 ? (
                     <ExclamationCircleIcon className='h-4' />
@@ -92,7 +103,7 @@ const Legend = React.memo(() => {
             </div>
             <div
                 className='flex items-center space-x-1'
-                style={{ color: '#f97316' }}
+                style={{ color: '#c2410c' }}
             >
                 {track7 ? (
                     <ExclamationCircleIcon className='h-4' />
@@ -103,7 +114,7 @@ const Legend = React.memo(() => {
             </div>
             <div
                 className='flex items-center space-x-1'
-                style={{ color: '#fdba74' }}
+                style={{ color: '#f97316' }}
             >
                 {track14 ? (
                     <ExclamationCircleIcon className='h-4' />
@@ -114,6 +125,17 @@ const Legend = React.memo(() => {
             </div>
             <div
                 className='flex items-center space-x-1'
+                style={{ color: '#fdba74' }}
+            >
+                {trackM ? (
+                    <ExclamationCircleIcon className='h-4' />
+                ) : (
+                    <DotLoading color='currentColor' />
+                )}
+                <span>{`发布<1个月`}</span>
+            </div>
+            <div
+                className='flex items-center space-x-1'
                 style={{ color: '#ffedd5' }}
             >
                 {trackLong ? (
@@ -121,7 +143,7 @@ const Legend = React.memo(() => {
                 ) : (
                     <DotLoading color='currentColor' />
                 )}
-                <span>{`发布≥14天`}</span>
+                <span>{`发布≥1个月`}</span>
             </div>
         </div>
     )
