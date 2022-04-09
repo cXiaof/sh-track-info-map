@@ -13,7 +13,7 @@ const App = React.memo(() => {
             (position) => {
                 const { longitude, latitude } = position.coords
                 const center = [longitude, latitude]
-                window.map.animateTo({ center, zoom: 17 })
+                window.map.animateTo({ center, zoom: 16 })
             },
             (error) => {
                 console.error(error)
