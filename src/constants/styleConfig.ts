@@ -50,14 +50,14 @@ const getPointSymbol = (fill: string, line: string) => [
         markerLineOpacity: 1,
         markerWidth: {
             stops: [
-                [8, window.getTextSize(4)],
-                [22, window.getTextSize(11)],
+                [8, 4],
+                [22, 12],
             ],
         },
         markerHeight: {
             stops: [
-                [8, window.getTextSize(4)],
-                [22, window.getTextSize(11)],
+                [8, 4],
+                [22, 12],
             ],
         },
         markerOpacity: 1,
@@ -67,8 +67,8 @@ const getPointSymbol = (fill: string, line: string) => [
         textFill: fill,
         textSize: {
             stops: [
-                [15, 0],
-                [15.1, 12],
+                [16, 0],
+                [16, 12],
             ],
         },
         textDy: 12,

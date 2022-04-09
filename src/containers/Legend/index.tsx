@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import {
     LocationMarkerIcon,
     ExclamationCircleIcon,
@@ -16,10 +16,12 @@ const Legend = React.memo(() => {
     const [trackM, trackMActions] = useBoolean(false)
     const [trackLong, trackLongActions] = useBoolean(false)
 
+    const groupLayer = useMemo(() => window.map.getLayer('GroupGL'), [])
+
     const renderRisk = useMemoizedFn(async () => {
         const result = await fetch(`./data/risk.geojson?_t=${time}`)
         const features = await result.json()
-        window.map.getLayer('risk').addGeometry(features)
+        groupLayer.getLayer('risk').addGeometry(features)
         riskOverActions.setTrue()
     })
 
@@ -27,7 +29,7 @@ const Legend = React.memo(() => {
         const result = await fetch(`./data/track_long.geojson?_t=${time}`)
         const features = await result.json()
         Object.values(features).forEach((track) =>
-            window.map.getLayer('track_long').addGeometry(track)
+            groupLayer.getLayer('track_long').addGeometry(track)
         )
         trackLongActions.setTrue()
     })
@@ -36,7 +38,7 @@ const Legend = React.memo(() => {
         const result = await fetch(`./data/track_m.geojson?_t=${time}`)
         const features = await result.json()
         Object.values(features).forEach((track) =>
-            window.map.getLayer('track_m').addGeometry(track)
+            groupLayer.getLayer('track_m').addGeometry(track)
         )
         trackMActions.setTrue()
     })
@@ -45,7 +47,7 @@ const Legend = React.memo(() => {
         const result = await fetch(`./data/track_14.geojson?_t=${time}`)
         const features = await result.json()
         Object.values(features).forEach((track) =>
-            window.map.getLayer('track_14').addGeometry(track)
+            groupLayer.getLayer('track_14').addGeometry(track)
         )
         track14Actions.setTrue()
     })
@@ -54,7 +56,7 @@ const Legend = React.memo(() => {
         const result = await fetch(`./data/track_7.geojson?_t=${time}`)
         const features = await result.json()
         Object.values(features).forEach((track) =>
-            window.map.getLayer('track_7').addGeometry(track)
+            groupLayer.getLayer('track_7').addGeometry(track)
         )
         track7Actions.setTrue()
     })
@@ -63,18 +65,20 @@ const Legend = React.memo(() => {
         const result = await fetch(`./data/track_3.geojson?_t=${time}`)
         const features = await result.json()
         Object.values(features).forEach((track) =>
-            window.map.getLayer('track_3').addGeometry(track)
+            groupLayer.getLayer('track_3').addGeometry(track)
         )
         track3Actions.setTrue()
     })
 
     useMount(() => {
-        renderRisk()
-        renderTrack3()
-        renderTrack7()
-        renderTrack14()
-        renderTrackM()
-        renderTrackLong()
+        window.map.once('loaddata', () => {
+            renderRisk()
+            renderTrack3()
+            renderTrack7()
+            renderTrack14()
+            renderTrackM()
+            renderTrackLong()
+        })
     })
 
     return (

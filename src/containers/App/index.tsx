@@ -13,7 +13,7 @@ const App = React.memo(() => {
             (position) => {
                 const { longitude, latitude } = position.coords
                 const center = [longitude, latitude]
-                window.map.animateTo({ center, zoom: 16 })
+                window.map.animateTo({ center, zoom: 17 })
             },
             (error) => {
                 console.error(error)
@@ -27,6 +27,9 @@ const App = React.memo(() => {
         Modal.alert({
             content: <Notice />,
             onConfirm: animate2Location,
+            afterShow: () => {
+                window.map.fire('loaddata')
+            },
         })
     })
 
