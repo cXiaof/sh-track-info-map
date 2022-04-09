@@ -45,17 +45,17 @@ const getPointSymbol = (fill: string, line: string) => [
         markerFill: fill,
         markerFillOpacity: 1,
         markerLineColor: line,
-        markerLineWidth: 2,
+        markerLineWidth: 4,
         markerLineOpacity: 1,
         markerWidth: {
             stops: [
-                [8, 4],
+                [9, 6],
                 [22, 12],
             ],
         },
         markerHeight: {
             stops: [
-                [8, 4],
+                [9, 6],
                 [22, 12],
             ],
         },
