@@ -25,7 +25,6 @@ export const riskSymbol = [
     {
         textName: '{published_address}',
         textFill: '#696aad',
-        textOpacity: 0.85,
         textSize: {
             stops: [
                 [12, 0],
@@ -35,7 +34,6 @@ export const riskSymbol = [
         textDy: 12,
         textHaloRadius: 1,
         textHaloFill: 'white',
-        textHaloOpacity: 0.85,
     },
 ]
 
@@ -45,18 +43,18 @@ const getPointSymbol = (fill: string, line: string) => [
         markerFill: fill,
         markerFillOpacity: 1,
         markerLineColor: line,
-        markerLineWidth: 4,
+        markerLineWidth: 3,
         markerLineOpacity: 1,
         markerWidth: {
             stops: [
-                [9, 6],
-                [22, 12],
+                [10, 6],
+                [20, 12],
             ],
         },
         markerHeight: {
             stops: [
-                [9, 6],
-                [22, 12],
+                [10, 6],
+                [20, 12],
             ],
         },
         markerOpacity: 1,
@@ -73,7 +71,6 @@ const getPointSymbol = (fill: string, line: string) => [
         textDy: 12,
         textHaloRadius: 1,
         textHaloFill: 'white',
-        textHaloOpacity: 0.85,
     },
 ]
 
