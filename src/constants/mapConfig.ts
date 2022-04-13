@@ -18,7 +18,7 @@ window.map = new window.maptalks.Map('map', {
     }),
 })
 
-new window.maptalks.GroupGLLayer('GroupGL', [
+const layers = [
     new window.maptalks.PointLayer('risk', {
         style: { symbol: styles.riskSymbol },
         zIndex: 9,
@@ -43,6 +43,10 @@ new window.maptalks.GroupGLLayer('GroupGL', [
         style: { symbol: styles.trackSymbol3 },
         zIndex: 5,
     }),
-]).addTo(window.map)
+]
+const options = {
+    hitDetect: false,
+}
+new window.maptalks.GroupGLLayer('GroupGL', layers, options).addTo(window.map)
 
 export {}
