@@ -3,9 +3,9 @@ import { useMemoizedFn, useMount } from 'ahooks'
 import { Modal } from 'antd-mobile'
 
 import Notice from './notice'
-import Legend from '@@/containers/Legend'
-import Zoom from '@@/containers/Zoom'
-import Location from '@@/containers/Location'
+import Legend from '@/containers/Legend'
+import Zoom from '@/containers/Zoom'
+import Location from '@/containers/Location'
 
 const App = React.memo(() => {
     const animate2Location = useMemoizedFn(() => {
