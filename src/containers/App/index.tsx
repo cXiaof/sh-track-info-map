@@ -3,6 +3,7 @@ import { useMemoizedFn, useMount } from 'ahooks'
 import { Modal } from 'antd-mobile'
 
 import Notice from './notice'
+import Record from '@/containers/Record'
 import Legend from '@/containers/Legend'
 import Zoom from '@/containers/Zoom'
 import Location from '@/containers/Location'
@@ -28,13 +29,18 @@ const App = React.memo(() => {
             content: <Notice />,
             onConfirm: animate2Location,
             afterShow: () => {
-                window.map.fire('loaddata')
+                requestAnimationFrame(() => {
+                    window.map.fire('loaddata')
+                })
             },
         })
     })
 
     return (
         <div>
+            <div className='absolute left-0 top-0 pl-5 pt-5 space-y-4'>
+                <Record />
+            </div>
             <div className='absolute left-0 bottom-0 pl-5 pb-11 space-y-4'>
                 <Legend />
             </div>

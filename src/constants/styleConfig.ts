@@ -1,3 +1,46 @@
+const getPointIcon = (fill: string, line: string) => ({
+    markerType: 'ellipse',
+    markerFill: fill,
+    markerFillOpacity: 1,
+    markerLineColor: line,
+    markerLineWidth: 3,
+    markerLineOpacity: 1,
+    markerWidth: {
+        stops: [
+            [7, 4],
+            [18, 12],
+        ],
+    },
+    markerHeight: {
+        stops: [
+            [6, 4],
+            [18, 12],
+        ],
+    },
+    markerOpacity: 1,
+})
+
+const getPointTip = (fill: string, line: string) => ({
+    textName: '{published_address}',
+    textFill: fill,
+    textSize: 12,
+    textDy: 12,
+    textHaloRadius: 1,
+    textHaloFill: 'white',
+})
+
+export const trackTipLong = getPointTip('#ffedd5', '#ffffff')
+export const trackTipM = getPointTip('#fdba74', '#ffedd5')
+export const trackTip14 = getPointTip('#f97316', '#fdba74')
+export const trackTip7 = getPointTip('#c2410c', '#f97316')
+export const trackTip3 = getPointTip('#7c2d12', '#c2410c')
+
+export const trackIconLong = getPointIcon('#ffedd5', '#ffffff')
+export const trackIconM = getPointIcon('#fdba74', '#ffedd5')
+export const trackIcon14 = getPointIcon('#f97316', '#fdba74')
+export const trackIcon7 = getPointIcon('#c2410c', '#f97316')
+export const trackIcon3 = getPointIcon('#7c2d12', '#c2410c')
+
 export const riskSymbol = [
     {
         markerType: 'path',
@@ -36,46 +79,3 @@ export const riskSymbol = [
         textHaloFill: 'white',
     },
 ]
-
-const getPointSymbol = (fill: string, line: string) => [
-    {
-        markerType: 'ellipse',
-        markerFill: fill,
-        markerFillOpacity: 1,
-        markerLineColor: line,
-        markerLineWidth: 3,
-        markerLineOpacity: 1,
-        markerWidth: {
-            stops: [
-                [7, 4],
-                [18, 12],
-            ],
-        },
-        markerHeight: {
-            stops: [
-                [6, 4],
-                [18, 12],
-            ],
-        },
-        markerOpacity: 1,
-    },
-    {
-        textName: '{published_address}',
-        textFill: fill,
-        textSize: {
-            stops: [
-                [15.5, 0],
-                [15.5, 12],
-            ],
-        },
-        textDy: 12,
-        textHaloRadius: 1,
-        textHaloFill: 'white',
-    },
-]
-
-export const trackSymbolLong = getPointSymbol('#ffedd5', '#ffffff')
-export const trackSymbolM = getPointSymbol('#fdba74', '#ffedd5')
-export const trackSymbol14 = getPointSymbol('#f97316', '#fdba74')
-export const trackSymbol7 = getPointSymbol('#c2410c', '#f97316')
-export const trackSymbol3 = getPointSymbol('#7c2d12', '#c2410c')

@@ -28,45 +28,50 @@ const Legend = React.memo(() => {
     const renderTrackLong = useMemoizedFn(async () => {
         const result = await fetch(`./data/track_long.geojson?_t=${time}`)
         const features = await result.json()
-        Object.values(features).forEach((track) =>
-            groupLayer.getLayer('track_long').addGeometry(track)
-        )
+        Object.values(features).forEach((track) => {
+            groupLayer.getLayer('track_tip_long').addGeometry(track)
+            groupLayer.getLayer('track_icon_long').addGeometry(track)
+        })
         trackLongActions.setTrue()
     })
 
     const renderTrackM = useMemoizedFn(async () => {
         const result = await fetch(`./data/track_m.geojson?_t=${time}`)
         const features = await result.json()
-        Object.values(features).forEach((track) =>
-            groupLayer.getLayer('track_m').addGeometry(track)
-        )
+        Object.values(features).forEach((track) => {
+            groupLayer.getLayer('track_tip_m').addGeometry(track)
+            groupLayer.getLayer('track_icon_m').addGeometry(track)
+        })
         trackMActions.setTrue()
     })
 
     const renderTrack14 = useMemoizedFn(async () => {
         const result = await fetch(`./data/track_14.geojson?_t=${time}`)
         const features = await result.json()
-        Object.values(features).forEach((track) =>
-            groupLayer.getLayer('track_14').addGeometry(track)
-        )
+        Object.values(features).forEach((track) => {
+            groupLayer.getLayer('track_tip_14').addGeometry(track)
+            groupLayer.getLayer('track_icon_14').addGeometry(track)
+        })
         track14Actions.setTrue()
     })
 
     const renderTrack7 = useMemoizedFn(async () => {
         const result = await fetch(`./data/track_7.geojson?_t=${time}`)
         const features = await result.json()
-        Object.values(features).forEach((track) =>
-            groupLayer.getLayer('track_7').addGeometry(track)
-        )
+        Object.values(features).forEach((track) => {
+            groupLayer.getLayer('track_tip_7').addGeometry(track)
+            groupLayer.getLayer('track_icon_7').addGeometry(track)
+        })
         track7Actions.setTrue()
     })
 
     const renderTrack3 = useMemoizedFn(async () => {
         const result = await fetch(`./data/track_3.geojson?_t=${time}`)
         const features = await result.json()
-        Object.values(features).forEach((track) =>
-            groupLayer.getLayer('track_3').addGeometry(track)
-        )
+        Object.values(features).forEach((track) => {
+            groupLayer.getLayer('track_tip_3').addGeometry(track)
+            groupLayer.getLayer('track_icon_3').addGeometry(track)
+        })
         track3Actions.setTrue()
     })
 

@@ -1,6 +1,6 @@
 {
   "name": "sh-track-info-map",
-  "version": "0.1.0-rc.1",
+  "version": "0.1.0",
   "homepage": ".",
   "author": "cXiaof",
   "license": "Apache",
@@ -23,6 +23,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@types/jest": "^27.0.1",
+    "@types/lodash": "^4.14.181",
     "@types/node": "^17.0.24",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.9",
