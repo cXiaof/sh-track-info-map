@@ -3,20 +3,10 @@ const getPointIcon = (fill: string, line: string) => ({
     markerFill: fill,
     markerFillOpacity: 1,
     markerLineColor: line,
-    markerLineWidth: 3,
+    markerLineWidth: 2,
     markerLineOpacity: 1,
-    markerWidth: {
-        stops: [
-            [7, 4],
-            [18, 12],
-        ],
-    },
-    markerHeight: {
-        stops: [
-            [6, 4],
-            [18, 12],
-        ],
-    },
+    markerWidth: 8,
+    markerHeight: 8,
     markerOpacity: 1,
 })
 

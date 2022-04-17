@@ -66,7 +66,7 @@ const layers = [
     }),
     new maptalks.PointLayer('risk', {
         style: { symbol: styles.riskSymbol },
-        zIndex: 10,
+        zIndex: 99,
     }),
 ]
 
