@@ -1,6 +1,6 @@
 import * as styles from './styleConfig'
 
-window.map = new window.maptalks.Map('map', {
+const map = new maptalks.Map('map', {
     center: [121.47362991, 31.23047407],
     zoom: 16,
     pitch: 15,
@@ -9,7 +9,7 @@ window.map = new window.maptalks.Map('map', {
         metric: true,
         imperial: false,
     },
-    baseLayer: new window.maptalks.TileLayer('baseLayer', {
+    baseLayer: new maptalks.TileLayer('baseLayer', {
         subdomains: ['01', '02', '03', '04'],
         placeholder: true,
         maxAvailableZoom: 18,
@@ -19,34 +19,38 @@ window.map = new window.maptalks.Map('map', {
 })
 
 const layers = [
-    new window.maptalks.PointLayer('risk', {
+    new maptalks.PointLayer('risk', {
         style: { symbol: styles.riskSymbol },
         zIndex: 9,
     }),
-    new window.maptalks.PointLayer('track_long', {
+    new maptalks.PointLayer('track_long', {
         style: { symbol: styles.trackSymbolLong },
         zIndex: 1,
     }),
-    new window.maptalks.PointLayer('track_m', {
+    new maptalks.PointLayer('track_m', {
         style: { symbol: styles.trackSymbolM },
         zIndex: 2,
     }),
-    new window.maptalks.PointLayer('track_14', {
+    new maptalks.PointLayer('track_14', {
         style: { symbol: styles.trackSymbol14 },
         zIndex: 3,
     }),
-    new window.maptalks.PointLayer('track_7', {
+    new maptalks.PointLayer('track_7', {
         style: { symbol: styles.trackSymbol7 },
         zIndex: 4,
     }),
-    new window.maptalks.PointLayer('track_3', {
+    new maptalks.PointLayer('track_3', {
         style: { symbol: styles.trackSymbol3 },
         zIndex: 5,
     }),
 ]
+
 const options = {
     hitDetect: false,
 }
-new window.maptalks.GroupGLLayer('GroupGL', layers, options).addTo(window.map)
+const groupLayer = new maptalks.GroupGLLayer('GroupGL', layers, options)
+groupLayer.addTo(map)
+
+window.map = map
 
 export {}
