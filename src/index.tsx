@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './constants/mapConfig'
-import './constants/projectConfig'
 import App from './containers/App'
 import reportWebVitals from './reportWebVitals'
 import './stylesheets/styles.scss'

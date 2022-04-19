@@ -1,3 +1,4 @@
+import './projectConfig'
 import * as styles from './styleConfig'
 
 const map = new maptalks.Map('map', {

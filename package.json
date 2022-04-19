@@ -5,18 +5,13 @@
   "license": "Apache",
   "author": "cXiaof",
   "scripts": {
-    "b": "npm run build",
     "build": "craco build",
-    "c": "npm run test:coverage",
-    "f": "npm run format",
     "format": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
     "geo:track": "node geo/track.js && npm run format:geojson",
     "prepublish": "npm run format",
-    "s": "npm run start",
     "start": "craco start",
-    "t": "npm run test",
     "test": "craco test",
     "test:coverage": "craco test --coverage"
   },
