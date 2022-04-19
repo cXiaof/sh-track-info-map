@@ -2,23 +2,41 @@
   "name": "sh-track-info-map",
   "version": "0.1.0",
   "homepage": ".",
-  "author": "cXiaof",
   "license": "Apache",
+  "author": "cXiaof",
   "scripts": {
-    "prepublish": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,js,jsx}\"",
-    "start": "craco start",
-    "s": "npm run start",
-    "build": "craco build",
     "b": "npm run build",
-    "test": "craco test",
-    "t": "npm run test",
-    "test:coverage": "craco test --coverage",
+    "build": "craco build",
     "c": "npm run test:coverage",
-    "format": "prettier --loglevel silent --write \"{src,public}/**/*.{html,css,scss,js,jsx}\"",
-    "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "f": "npm run format",
+    "format": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
+    "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
-    "geo:track": "node geo/track.js && npm run format:geojson"
+    "geo:track": "node geo/track.js && npm run format:geojson",
+    "prepublish": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
+    "s": "npm run start",
+    "start": "craco start",
+    "t": "npm run test",
+    "test": "craco test",
+    "test:coverage": "craco test --coverage"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -50,24 +68,8 @@
     "open-color": "^1.9.1",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-packagejson": "^2.2.17",
     "tailwindcss": "^3.0.24"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

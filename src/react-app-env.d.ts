@@ -3,8 +3,8 @@
 declare const maptalks: any
 
 interface Window {
-    debug: boolean
-    fontSize: number
-    getTextSize: (px: number) => number
-    map: any
+  debug: boolean
+  fontSize: number
+  getTextSize: (px: number) => number
+  map: any
 }
