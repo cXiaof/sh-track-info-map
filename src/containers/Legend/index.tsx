@@ -79,14 +79,11 @@ const Legend = React.memo(() => {
 
 const renderGeometry = (data: any, type: string) => {
   const groupLayer = window.map.getLayer('GroupGL')
-  const tipLayer = groupLayer.getLayer(`track_tip_${type}`)
-  const iconLayer = groupLayer.getLayer(`track_icon_${type}`)
+  const layer = groupLayer.getLayer(`track_${type}`)
   Object.values(data).forEach((track) => {
-    tipLayer.addGeometry(track)
-    iconLayer.addGeometry(track)
+    layer.addGeometry(track)
   })
-  tipLayer.show()
-  iconLayer.show()
+  layer.show()
 }
 
 export default Legend
