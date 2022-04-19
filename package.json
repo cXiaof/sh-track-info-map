@@ -13,7 +13,7 @@
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
     "geo:track": "node geo/track.js && npm run format:geojson",
-    "prepublish": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
+    "prepublish": "npm run format",
     "s": "npm run start",
     "start": "craco start",
     "t": "npm run test",
