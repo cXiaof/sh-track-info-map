@@ -1,11 +1,11 @@
 import { SupportIcon } from '@heroicons/react/outline'
-import React from 'react'
+import React, { FC } from 'react'
 
 export interface LocationProps {
   animate2Location: () => void
 }
 
-const Location = React.memo(({ animate2Location }: LocationProps) => {
+const Location: FC<LocationProps> = React.memo(({ animate2Location }) => {
   return (
     <div
       className='h-10 w-10 text-2xl bg-white bg-opacity-[0.85] rounded-full pointer-events-auto flex justify-center items-center'

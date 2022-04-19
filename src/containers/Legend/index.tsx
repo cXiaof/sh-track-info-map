@@ -1,11 +1,8 @@
 import * as services from '@/services'
-import {
-  ExclamationCircleIcon,
-  LocationMarkerIcon,
-} from '@heroicons/react/solid'
+import { LocationMarkerIcon } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
-import { DotLoading } from 'antd-mobile'
-import React, { useMemo } from 'react'
+import React from 'react'
+import LegendItem from './LegendItem'
 
 const Legend = React.memo(() => {
   const [riskOver, riskOverActions] = useBoolean(false)
@@ -15,56 +12,40 @@ const Legend = React.memo(() => {
   const [trackM, trackMActions] = useBoolean(false)
   const [trackLong, trackLongActions] = useBoolean(false)
 
-  const groupLayer = useMemo(() => window.map.getLayer('GroupGL'), [])
-
   const renderRisk = useMemoizedFn(async () => {
     const features = await services.getRisk()
+    const groupLayer = window.map.getLayer('GroupGL')
     groupLayer.getLayer('risk').addGeometry(features)
     riskOverActions.setTrue()
   })
 
   const renderTrackLong = useMemoizedFn(async () => {
     const features = await services.getTrackLong()
-    Object.values(features).forEach((track) => {
-      groupLayer.getLayer('track_tip_long').addGeometry(track)
-      groupLayer.getLayer('track_icon_long').addGeometry(track)
-    })
+    renderGeometry(features, 'long')
     trackLongActions.setTrue()
   })
 
   const renderTrackM = useMemoizedFn(async () => {
     const features = await services.getTrackM()
-    Object.values(features).forEach((track) => {
-      groupLayer.getLayer('track_tip_m').addGeometry(track)
-      groupLayer.getLayer('track_icon_m').addGeometry(track)
-    })
+    renderGeometry(features, 'm')
     trackMActions.setTrue()
   })
 
   const renderTrack14 = useMemoizedFn(async () => {
     const features = await services.getTrack14()
-    Object.values(features).forEach((track) => {
-      groupLayer.getLayer('track_tip_14').addGeometry(track)
-      groupLayer.getLayer('track_icon_14').addGeometry(track)
-    })
+    renderGeometry(features, '14')
     track14Actions.setTrue()
   })
 
   const renderTrack7 = useMemoizedFn(async () => {
     const features = await services.getTrack7()
-    Object.values(features).forEach((track) => {
-      groupLayer.getLayer('track_tip_7').addGeometry(track)
-      groupLayer.getLayer('track_icon_7').addGeometry(track)
-    })
+    renderGeometry(features, '7')
     track7Actions.setTrue()
   })
 
   const renderTrack3 = useMemoizedFn(async () => {
     const features = await services.getTrack3()
-    Object.values(features).forEach((track) => {
-      groupLayer.getLayer('track_tip_3').addGeometry(track)
-      groupLayer.getLayer('track_icon_3').addGeometry(track)
-    })
+    renderGeometry(features, '3')
     track3Actions.setTrue()
   })
 
@@ -81,59 +62,31 @@ const Legend = React.memo(() => {
 
   return (
     <div className='p-2 text-base bg-white bg-opacity-[0.85] rounded-lg pointer-events-auto'>
-      <div
-        className='flex items-center space-x-[2px]'
-        style={{ color: '#696aad' }}
-      >
-        {riskOver ? (
-          <LocationMarkerIcon className='h-5 -ml-[2px]' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>中风险地区</span>
-      </div>
-      <div className='flex items-center space-x-1' style={{ color: '#7c2d12' }}>
-        {track3 ? (
-          <ExclamationCircleIcon className='h-4' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>{`发布<3天`}</span>
-      </div>
-      <div className='flex items-center space-x-1' style={{ color: '#c2410c' }}>
-        {track7 ? (
-          <ExclamationCircleIcon className='h-4' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>{`发布<7天`}</span>
-      </div>
-      <div className='flex items-center space-x-1' style={{ color: '#f97316' }}>
-        {track14 ? (
-          <ExclamationCircleIcon className='h-4' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>{`发布<14天`}</span>
-      </div>
-      <div className='flex items-center space-x-1' style={{ color: '#fdba74' }}>
-        {trackM ? (
-          <ExclamationCircleIcon className='h-4' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>{`发布<1个月`}</span>
-      </div>
-      <div className='flex items-center space-x-1' style={{ color: '#ffedd5' }}>
-        {trackLong ? (
-          <ExclamationCircleIcon className='h-4' />
-        ) : (
-          <DotLoading color='currentColor' />
-        )}
-        <span>{`发布≥1个月`}</span>
-      </div>
+      <LegendItem
+        loading={!riskOver}
+        theme='#696aad'
+        icon={<LocationMarkerIcon className='h-5 -ml-[2px]' />}
+        title='中风险地区'
+      />
+      <LegendItem loading={!track3} theme='#7c2d12' title='发布<3天' />
+      <LegendItem loading={!track7} theme='#c2410c' title='发布<7天' />
+      <LegendItem loading={!track14} theme='#f97316' title='发布<14天' />
+      <LegendItem loading={!trackM} theme='#fdba74' title='发布<1个月' />
+      <LegendItem loading={!trackLong} theme='#ffedd5' title='发布≥1个月' />
     </div>
   )
 })
+
+const renderGeometry = (data: any, type: string) => {
+  const groupLayer = window.map.getLayer('GroupGL')
+  const tipLayer = groupLayer.getLayer(`track_tip_${type}`)
+  const iconLayer = groupLayer.getLayer(`track_icon_${type}`)
+  Object.values(data).forEach((track) => {
+    tipLayer.addGeometry(track)
+    iconLayer.addGeometry(track)
+  })
+  tipLayer.show()
+  iconLayer.show()
+}
 
 export default Legend

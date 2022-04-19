@@ -21,49 +21,59 @@ const map = new maptalks.Map('map', {
 
 const layers = [
   new maptalks.PointLayer('track_tip_long', {
-    style: { symbol: styles.trackTipLong },
+    visible: false,
     zIndex: 1,
     minZoom: 15.5,
+    style: { symbol: styles.trackTipLong },
   }),
   new maptalks.PointLayer('track_tip_m', {
-    style: { symbol: styles.trackTipM },
+    visible: false,
     zIndex: 2,
     minZoom: 15.5,
+    style: { symbol: styles.trackTipM },
   }),
   new maptalks.PointLayer('track_tip_14', {
-    style: { symbol: styles.trackTip14 },
+    visible: false,
     zIndex: 3,
     minZoom: 15.5,
+    style: { symbol: styles.trackTip14 },
   }),
   new maptalks.PointLayer('track_tip_7', {
-    style: { symbol: styles.trackTip7 },
+    visible: false,
     zIndex: 4,
     minZoom: 15.5,
+    style: { symbol: styles.trackTip7 },
   }),
   new maptalks.PointLayer('track_tip_3', {
-    style: { symbol: styles.trackTip3 },
+    visible: false,
     zIndex: 5,
     minZoom: 15.5,
+    style: { symbol: styles.trackTip3 },
   }),
   new maptalks.PointLayer('track_icon_long', {
-    style: { symbol: styles.trackIconLong },
+    visible: false,
     zIndex: 6,
+    style: { symbol: styles.trackIconLong },
   }),
   new maptalks.PointLayer('track_icon_m', {
-    style: { symbol: styles.trackIconM },
+    visible: false,
     zIndex: 7,
+    style: { symbol: styles.trackIconM },
   }),
   new maptalks.PointLayer('track_icon_14', {
-    style: { symbol: styles.trackIcon14 },
+    visible: false,
     zIndex: 8,
+    style: { symbol: styles.trackIcon14 },
   }),
   new maptalks.PointLayer('track_icon_7', {
-    style: { symbol: styles.trackIcon7 },
+    visible: false,
     zIndex: 9,
+    style: { symbol: styles.trackIcon7 },
   }),
   new maptalks.PointLayer('track_icon_3', {
-    style: { symbol: styles.trackIcon3 },
+    visible: false,
     zIndex: 10,
+    style: { symbol: styles.trackIcon3 },
   }),
   new maptalks.PointLayer('risk', {
     style: { symbol: styles.riskSymbol },
