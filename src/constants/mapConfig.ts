@@ -6,7 +6,7 @@ const map = new maptalks.Map('map', {
   zoom: 15,
   pitch: 15,
   scaleControl: {
-    position: { bottom: '1', right: '28' },
+    position: { bottom: '1', right: '32' },
     metric: true,
     imperial: false,
   },

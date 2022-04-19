@@ -40,10 +40,10 @@ const App = React.memo(() => {
       <div className='absolute left-0 top-0 pl-5 pt-5 space-y-4'>
         <Record />
       </div>
-      <div className='absolute left-0 bottom-0 pl-5 pb-11 space-y-4'>
+      <div className='absolute left-0 bottom-0 pl-5 pb-10 space-y-4'>
         <Legend />
       </div>
-      <div className='absolute text-primary right-0 bottom-0 pr-5 pb-11 space-y-4'>
+      <div className='absolute text-primary right-0 bottom-0 pr-5 pb-10 space-y-4'>
         <Zoom />
         <Location animate2Location={animate2Location} />
       </div>
