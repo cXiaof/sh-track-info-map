@@ -81,7 +81,8 @@ const layers = [
   }),
 ]
 
-const groupLayer = new maptalks.GroupGLLayer('GroupGL', layers)
+const options = { hitDetect: false }
+const groupLayer = new maptalks.GroupGLLayer('GroupGL', layers, options)
 groupLayer.addTo(map)
 
 map.on('click', (params: any) => {
