@@ -12,7 +12,8 @@ const App = React.memo(() => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { longitude, latitude } = position.coords
-        const center = [longitude, latitude]
+        const coords = [longitude, latitude]
+        const center = maptalks.CRSTransform.transform(coords, 'WGS84', 'GCJ02')
         window.map.animateTo({ center, zoom: 16 })
       },
       (error) => {
