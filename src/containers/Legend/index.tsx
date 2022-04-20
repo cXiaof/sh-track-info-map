@@ -79,11 +79,15 @@ const Legend = React.memo(() => {
 
 const renderGeometry = (data: any, type: string) => {
   const groupLayer = window.map.getLayer('GroupGL')
-  const layer = groupLayer.getLayer(`track_${type}`)
-  Object.values(data).forEach((track) => {
-    layer.addGeometry(track)
-  })
-  layer.show()
+  const collection = Object.values(data).reduce(
+    (target: any, item: any) => {
+      target.features = [...target.features, ...item.features]
+      return target
+    },
+    { type: 'FeatureCollection', features: [] },
+  )
+  groupLayer.getLayer(`track_tip_${type}`).setData(collection).show()
+  groupLayer.getLayer(`track_icon_${type}`).addGeometry(collection).show()
 }
 
 export default Legend

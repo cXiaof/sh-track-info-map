@@ -20,34 +20,64 @@ const map = new maptalks.Map('map', {
 })
 
 const layers = [
-  new maptalks.PointLayer('track_long', {
+  new maptalks.GeoJSONVectorTileLayer('track_tip_long', {
     visible: false,
     zIndex: 1,
-    style: { symbol: styles.trackLong },
+    minZoom: 15.5,
+    style: styles.trackTipLong,
   }),
-  new maptalks.PointLayer('track_m', {
+  new maptalks.GeoJSONVectorTileLayer('track_tip_m', {
     visible: false,
     zIndex: 2,
-    style: { symbol: styles.trackM },
+    minZoom: 15.5,
+    style: styles.trackTipM,
   }),
-  new maptalks.PointLayer('track_14', {
+  new maptalks.GeoJSONVectorTileLayer('track_tip_14', {
     visible: false,
     zIndex: 3,
-    style: { symbol: styles.track14 },
+    minZoom: 15.5,
+    style: styles.trackTip14,
   }),
-  new maptalks.PointLayer('track_7', {
+  new maptalks.GeoJSONVectorTileLayer('track_tip_7', {
     visible: false,
     zIndex: 4,
-    style: { symbol: styles.track7 },
+    minZoom: 15.5,
+    style: styles.trackTip7,
   }),
-  new maptalks.PointLayer('track_3', {
+  new maptalks.GeoJSONVectorTileLayer('track_tip_3', {
     visible: false,
     zIndex: 5,
-    style: { symbol: styles.track3 },
+    minZoom: 15.5,
+    style: styles.trackTip3,
+  }),
+  new maptalks.PointLayer('track_icon_long', {
+    visible: false,
+    zIndex: 6,
+    style: styles.trackIconLong,
+  }),
+  new maptalks.PointLayer('track_icon_m', {
+    visible: false,
+    zIndex: 7,
+    style: styles.trackIconM,
+  }),
+  new maptalks.PointLayer('track_icon_14', {
+    visible: false,
+    zIndex: 8,
+    style: styles.trackIcon14,
+  }),
+  new maptalks.PointLayer('track_icon_7', {
+    visible: false,
+    zIndex: 9,
+    style: styles.trackIcon7,
+  }),
+  new maptalks.PointLayer('track_icon_3', {
+    visible: false,
+    zIndex: 10,
+    style: styles.trackIcon3,
   }),
   new maptalks.PointLayer('risk', {
     style: { symbol: styles.riskSymbol },
-    zIndex: 9,
+    zIndex: 99,
   }),
 ]
 
@@ -62,9 +92,13 @@ map.on('click', (params: any) => {
       layers: groupLayer.getLayers(),
     },
     (geos: any[]) => {
-      let data = geos.reduce((target, geo) => {
-        if (geo.getLayer().getId().startsWith('track')) {
-          target.push(geo.getProperties())
+      const data = geos.reduce((target, geo) => {
+        if (geo instanceof maptalks.Marker) {
+          if (geo.getLayer().getId().startsWith('track')) {
+            target.push(geo.getProperties())
+          }
+        } else {
+          target.push(geo.data.feature.properties)
         }
         return target
       }, [])

@@ -1,31 +1,44 @@
-const getPointIcon = (fill: string, line: string) => ({
-  markerType: 'ellipse',
-  markerFill: fill,
-  markerFillOpacity: 1,
-  markerLineColor: line,
-  markerLineWidth: 2,
-  markerLineOpacity: 1,
-  markerWidth: 8,
-  markerHeight: 8,
-  markerOpacity: 1,
-  textName: '{published_address}',
-  textFill: fill,
-  textSize: {
-    stops: [
-      [15.5, 0],
-      [15.5, 12],
-    ],
-  },
-  textDy: 12,
-  textHaloRadius: 1,
-  textHaloFill: 'white',
+const getPointTip = (fill: string, line: string) => ({
+  style: [
+    {
+      renderPlugin: { type: 'text', dataConfig: { type: 'point' } },
+      symbol: {
+        textName: '{published_address}',
+        textFill: fill,
+        textSize: 12,
+        textDy: 12,
+        textHaloRadius: 1,
+        textHaloFill: 'white',
+      },
+    },
+  ],
 })
 
-export const trackLong = getPointIcon('#ffedd5', '#ffffff')
-export const trackM = getPointIcon('#fdba74', '#ffedd5')
-export const track14 = getPointIcon('#f97316', '#fdba74')
-export const track7 = getPointIcon('#c2410c', '#f97316')
-export const track3 = getPointIcon('#7c2d12', '#c2410c')
+const getPointIcon = (fill: string, line: string) => ({
+  symbol: {
+    markerType: 'ellipse',
+    markerFill: fill,
+    markerFillOpacity: 1,
+    markerLineColor: line,
+    markerLineWidth: 2,
+    markerLineOpacity: 1,
+    markerWidth: 8,
+    markerHeight: 8,
+    markerOpacity: 1,
+  },
+})
+
+export const trackTipLong = getPointTip('#ffedd5', '#ffffff')
+export const trackTipM = getPointTip('#fdba74', '#ffedd5')
+export const trackTip14 = getPointTip('#f97316', '#fdba74')
+export const trackTip7 = getPointTip('#c2410c', '#f97316')
+export const trackTip3 = getPointTip('#7c2d12', '#c2410c')
+
+export const trackIconLong = getPointIcon('#ffedd5', '#ffffff')
+export const trackIconM = getPointIcon('#fdba74', '#ffedd5')
+export const trackIcon14 = getPointIcon('#f97316', '#fdba74')
+export const trackIcon7 = getPointIcon('#c2410c', '#f97316')
+export const trackIcon3 = getPointIcon('#7c2d12', '#c2410c')
 
 export const riskSymbol = [
   {
