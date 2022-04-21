@@ -1,3 +1,4 @@
+import * as itemsUtils from '@/utils/itemsUtils'
 import './projectConfig'
 import * as styles from './styleConfig'
 
@@ -92,17 +93,17 @@ map.on('click', (params: any) => {
       layers: groupLayer.getLayers(),
     },
     (geos: any[]) => {
-      const data = geos.reduce((target, geo) => {
+      const address = geos.reduce((target, geo) => {
         if (geo instanceof maptalks.Marker) {
           if (geo.getLayer().getId().startsWith('track')) {
-            target.push(geo.getProperties())
+            target.push(geo.getProperties().published_address)
           }
         } else {
-          target.push(geo.data.feature.properties)
+          target.push(geo.data.feature.properties.published_address)
         }
         return target
       }, [])
-      map.fire('record', { data })
+      map.fire('record', { data: itemsUtils.getArrNoRepeat(address) })
     },
   )
 })

@@ -1,6 +1,5 @@
 import { getArrNoRepeat } from '@/utils/itemsUtils'
 import { useMount } from 'ahooks'
-import orderBy from 'lodash/orderBy'
 import React, { useState } from 'react'
 
 interface RecordMap {
@@ -12,19 +11,10 @@ const Record = React.memo(() => {
 
   useMount(() => {
     window.map.on('record', (params: any) => {
-      const orderdata = orderBy(
-        params.data,
-        ['published_address', 'date'],
-        ['asc', 'desc'],
-      )
-      const datamap = orderdata.reduce<any>(
-        (target, { published_address, date }) => {
-          if (target[published_address]) target[published_address].push(date)
-          else target[published_address] = [date]
-          return target
-        },
-        {},
-      )
+      const datamap = params.data.reduce((target: any, address: string) => {
+        target[address] = getAddrDates(address)
+        return target
+      }, {})
       setRecords(datamap)
     })
   })
@@ -63,6 +53,31 @@ const Record = React.memo(() => {
     </div>
   )
 })
+
+const getAddrDates = (address: string) => {
+  const geos = filterGeos(address)
+  const dates = geos.map((geo) => geo.getProperties().date)
+  return dates.sort((val1, val2) => {
+    if (val1 === val2) return 0
+    return val1 < val2 ? 1 : -1
+  })
+}
+
+const filterGeos = (address: string) => {
+  const groupLayer = window.map.getLayer('GroupGL')
+  const layernames = [
+    'track_icon_long',
+    'track_icon_m',
+    'track_icon_14',
+    'track_icon_7',
+    'track_icon_3',
+  ]
+  return layernames.reduce<any[]>((target, layername: string) => {
+    const layer = groupLayer.getLayer(layername)
+    const result = layer.filter(['==', 'published_address', address])
+    return [...target, ...result]
+  }, [])
+}
 
 const fmtDate = (num: number) => num.toString().padStart(2, '0')
 
