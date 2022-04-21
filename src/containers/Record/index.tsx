@@ -1,5 +1,6 @@
 import { getArrNoRepeat } from '@/utils/itemsUtils'
 import { useMount } from 'ahooks'
+import classnames from 'classnames'
 import React, { useState } from 'react'
 
 interface RecordMap {
@@ -29,7 +30,12 @@ const Record = React.memo(() => {
   }
 
   return (
-    <div className='p-2 text-base bg-white bg-opacity-[0.85] rounded-lg pointer-events-auto divide-y'>
+    <div
+      className={classnames(
+        'px-2 py-1 text-base bg-white bg-opacity-[0.85] rounded-lg pointer-events-auto divide-y overflow-y-auto',
+        'max-h-[calc(100vh_-_1.25rem_-_10rem_-_2.5rem_-_1.25rem)]',
+      )}
+    >
       {Object.entries(records).map(([address, dates]) => (
         <div
           key={address}

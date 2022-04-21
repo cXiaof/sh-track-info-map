@@ -33,3 +33,7 @@ body {
   @apply h-screen;
   @apply pointer-events-none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
