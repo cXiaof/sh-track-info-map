@@ -22,57 +22,52 @@ const map = new maptalks.Map('map', {
 
 const layers = [
   new maptalks.GeoJSONVectorTileLayer('track_tip_long', {
-    visible: false,
+    data: { type: 'FeatureCollection', features: [] },
     zIndex: 1,
     minZoom: 15.5,
     style: styles.trackTipLong,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_m', {
-    visible: false,
+    data: { type: 'FeatureCollection', features: [] },
     zIndex: 2,
     minZoom: 15.5,
     style: styles.trackTipM,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_14', {
-    visible: false,
+    data: { type: 'FeatureCollection', features: [] },
     zIndex: 3,
     minZoom: 15.5,
     style: styles.trackTip14,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_7', {
-    visible: false,
+    data: { type: 'FeatureCollection', features: [] },
     zIndex: 4,
     minZoom: 15.5,
     style: styles.trackTip7,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_3', {
-    visible: false,
+    data: { type: 'FeatureCollection', features: [] },
     zIndex: 5,
     minZoom: 15.5,
     style: styles.trackTip3,
   }),
   new maptalks.PointLayer('track_icon_long', {
-    visible: false,
     zIndex: 6,
     style: styles.trackIconLong,
   }),
   new maptalks.PointLayer('track_icon_m', {
-    visible: false,
     zIndex: 7,
     style: styles.trackIconM,
   }),
   new maptalks.PointLayer('track_icon_14', {
-    visible: false,
     zIndex: 8,
     style: styles.trackIcon14,
   }),
   new maptalks.PointLayer('track_icon_7', {
-    visible: false,
     zIndex: 9,
     style: styles.trackIcon7,
   }),
   new maptalks.PointLayer('track_icon_3', {
-    visible: false,
     zIndex: 10,
     style: styles.trackIcon3,
   }),

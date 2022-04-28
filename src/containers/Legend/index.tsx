@@ -22,6 +22,8 @@ const Legend = React.memo(() => {
   const renderTrackLong = useMemoizedFn(async () => {
     const features = await services.getTrackLong()
     renderGeometry(features, 'long')
+    const featuresMarch = await services.getTrackMarch()
+    renderGeometry(featuresMarch, 'long')
     trackLongActions.setTrue()
   })
 
@@ -79,15 +81,19 @@ const Legend = React.memo(() => {
 
 const renderGeometry = (data: any, type: string) => {
   const groupLayer = window.map.getLayer('GroupGL')
-  const collection = Object.values(data).reduce(
-    (target: any, item: any) => {
-      target.features = [...target.features, ...item.features]
-      return target
-    },
-    { type: 'FeatureCollection', features: [] },
-  )
-  groupLayer.getLayer(`track_tip_${type}`).setData(collection).show()
-  groupLayer.getLayer(`track_icon_${type}`).addGeometry(collection).show()
+  const tipLayer = groupLayer.getLayer(`track_tip_${type}`)
+  const iconLayer = groupLayer.getLayer(`track_icon_${type}`)
+
+  tipLayer.hide()
+  iconLayer.hide()
+
+  const collection = Object.values(data).reduce((target: any, item: any) => {
+    target.features = [...target.features, ...item.features]
+    return target
+  }, tipLayer.getData())
+
+  tipLayer.setData(collection).show()
+  iconLayer.addGeometry(collection).show()
 }
 
 export default Legend
