@@ -37,7 +37,7 @@
     "@heroicons/react": "^1.0.6",
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.182",
-    "@types/node": "^17.0.30",
+    "@types/node": "^17.0.31",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.9",
     "ahooks": "^3.3.10",
@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
-    "autoprefixer": "^10.4.5",
+    "autoprefixer": "^10.4.6",
     "craco-alias": "^3.0.1",
     "fs-extra": "^10.1.0",
     "node-sass": "^7.0.1",

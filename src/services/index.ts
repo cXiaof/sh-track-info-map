@@ -9,6 +9,7 @@ const fetchGeoJSON = (fileName: string, noCache?: boolean) => async () => {
 }
 
 export const getRisk = fetchGeoJSON('risk', true)
+export const getTrackApril = fetchGeoJSON('track_april')
 export const getTrackMarch = fetchGeoJSON('track_march')
 export const getTrackLong = fetchGeoJSON('track_long', true)
 export const getTrackM = fetchGeoJSON('track_m', true)

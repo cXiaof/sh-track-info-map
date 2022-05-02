@@ -22,6 +22,8 @@ const Legend = React.memo(() => {
   const renderTrackLong = useMemoizedFn(async () => {
     const features = await services.getTrackLong()
     renderGeometry(features, 'long')
+    const featuresApril = await services.getTrackApril()
+    renderGeometry(featuresApril, 'long')
     const featuresMarch = await services.getTrackMarch()
     renderGeometry(featuresMarch, 'long')
     trackLongActions.setTrue()
