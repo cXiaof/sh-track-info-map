@@ -3,9 +3,11 @@ import { LocationMarkerIcon } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
 import React from 'react'
 import LegendItem from './LegendItem'
+import LoadAll from './LoadAll'
 
-const Legend = React.memo(() => {
+const Legend = () => {
   const [riskOver, riskOverActions] = useBoolean(false)
+  const [loadAll, loadAllActions] = useBoolean(false)
   const [track3, track3Actions] = useBoolean(false)
   const [track7, track7Actions] = useBoolean(false)
   const [track14, track14Actions] = useBoolean(false)
@@ -21,11 +23,14 @@ const Legend = React.memo(() => {
 
   const renderTrackLong = useMemoizedFn(async () => {
     const features = await services.getTrackLong()
-    renderGeometry(features, 'long')
     const featuresApril = await services.getTrackApril()
-    renderGeometry(featuresApril, 'long')
     const featuresMarch = await services.getTrackMarch()
-    renderGeometry(featuresMarch, 'long')
+    const featuresLong = {
+      ...features,
+      ...featuresApril,
+      ...featuresMarch,
+    }
+    renderGeometry(featuresLong, 'long')
     trackLongActions.setTrue()
   })
 
@@ -53,6 +58,11 @@ const Legend = React.memo(() => {
     track3Actions.setTrue()
   })
 
+  const handleLoadAll = useMemoizedFn(() => {
+    loadAllActions.setTrue()
+    renderTrackLong()
+  })
+
   useMount(() => {
     window.map.once('loaddata', () => {
       renderRisk()
@@ -60,7 +70,7 @@ const Legend = React.memo(() => {
       renderTrack7()
       renderTrack14()
       renderTrackM()
-      renderTrackLong()
+      handleLoadAll()
     })
   })
 
@@ -76,26 +86,27 @@ const Legend = React.memo(() => {
       <LegendItem loading={!track7} theme='#c2410c' title='发布<7天' />
       <LegendItem loading={!track14} theme='#f97316' title='发布<14天' />
       <LegendItem loading={!trackM} theme='#fdba74' title='发布<1个月' />
-      <LegendItem loading={!trackLong} theme='#ffedd5' title='发布≥1个月' />
+      {loadAll ? (
+        <LegendItem loading={!trackLong} theme='#ffedd5' title='发布≥1个月' />
+      ) : (
+        <LoadAll loadAll={handleLoadAll} />
+      )}
     </div>
   )
-})
+}
 
 const renderGeometry = (data: any, type: string) => {
   const groupLayer = window.map.getLayer('GroupGL')
   const tipLayer = groupLayer.getLayer(`track_tip_${type}`)
   const iconLayer = groupLayer.getLayer(`track_icon_${type}`)
 
-  tipLayer.hide()
-  iconLayer.hide()
-
   const collection = Object.values(data).reduce((target: any, item: any) => {
     target.features = [...target.features, ...item.features]
     return target
   }, tipLayer.getData())
 
-  tipLayer.setData(collection).show()
-  iconLayer.addGeometry(collection).show()
+  tipLayer.setData(collection)
+  iconLayer.addGeometry(collection)
 }
 
-export default Legend
+export default React.memo(Legend)

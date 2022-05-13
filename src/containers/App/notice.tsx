@@ -1,7 +1,7 @@
 import { Divider } from 'antd-mobile'
 import React from 'react'
 
-const Notice = React.memo(() => {
+const Notice = () => {
   return (
     <div>
       <p className='text-center font-semibold mt-0'>制作目的</p>
@@ -42,6 +42,6 @@ const Notice = React.memo(() => {
       </ol>
     </div>
   )
-})
+}
 
-export default Notice
+export default React.memo(Notice)

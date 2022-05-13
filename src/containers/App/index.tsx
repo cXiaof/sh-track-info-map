@@ -7,7 +7,7 @@ import { Modal } from 'antd-mobile'
 import React from 'react'
 import Notice from './notice'
 
-const App = React.memo(() => {
+const App = () => {
   const animate2Location = useMemoizedFn(() => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -50,6 +50,6 @@ const App = React.memo(() => {
       </div>
     </div>
   )
-})
+}
 
-export default App
+export default React.memo(App)

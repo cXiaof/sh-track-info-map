@@ -3,7 +3,7 @@ import { useMemoizedFn } from 'ahooks'
 import { Divider } from 'antd-mobile'
 import React from 'react'
 
-const Zoom = React.memo(() => {
+const Zoom = () => {
   const handleZoomIn = useMemoizedFn(() => {
     window.map.zoomIn()
   })
@@ -19,6 +19,6 @@ const Zoom = React.memo(() => {
       <MinusIcon className='h-6 mb-1' onClick={handleZoomOut} />
     </div>
   )
-})
+}
 
-export default Zoom
+export default React.memo(Zoom)

@@ -7,7 +7,7 @@ interface RecordMap {
   [address: string]: number[]
 }
 
-const Record = React.memo(() => {
+const Record = () => {
   const [records, setRecords] = useState<RecordMap>({})
 
   useMount(() => {
@@ -58,7 +58,7 @@ const Record = React.memo(() => {
       ))}
     </div>
   )
-})
+}
 
 const getAddrDates = (address: string) => {
   const geos = filterGeos(address)
@@ -87,4 +87,4 @@ const filterGeos = (address: string) => {
 
 const fmtDate = (num: number) => num.toString().padStart(2, '0')
 
-export default Record
+export default React.memo(Record)
