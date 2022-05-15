@@ -1,6 +1,7 @@
 import * as services from '@/services'
 import { LocationMarkerIcon } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
+import { Toast } from 'antd-mobile'
 import React from 'react'
 import LegendItem from './LegendItem'
 import LoadAll from './LoadAll'
@@ -22,16 +23,14 @@ const Legend = () => {
   })
 
   const renderTrackLong = useMemoizedFn(async () => {
-    const features = await services.getTrackLong()
-    const featuresApril = await services.getTrackApril()
-    const featuresMarch = await services.getTrackMarch()
-    const featuresLong = {
-      ...features,
-      ...featuresApril,
-      ...featuresMarch,
+    try {
+      const features = await services.getTrackLong()
+      renderGeometry(features, 'long')
+      trackLongActions.setTrue()
+    } catch (error) {
+      showFailToast()
+      loadAllActions.setFalse()
     }
-    renderGeometry(featuresLong, 'long')
-    trackLongActions.setTrue()
   })
 
   const renderTrackM = useMemoizedFn(async () => {
@@ -107,6 +106,18 @@ const renderGeometry = (data: any, type: string) => {
 
   tipLayer.setData(collection)
   iconLayer.addGeometry(collection)
+}
+
+const showFailToast = () => {
+  Toast.show({
+    icon: 'fail',
+    content: (
+      <div className='text-center'>
+        <div>历史数据接口错误</div>
+        <div>请稍候重试</div>
+      </div>
+    ),
+  })
 }
 
 export default React.memo(Legend)

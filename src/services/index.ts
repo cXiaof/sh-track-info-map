@@ -1,18 +1,28 @@
 const time = new Date().getTime()
 
-const fetchGeoJSON = (fileName: string, noCache?: boolean) => async () => {
-  let url = `./data/${fileName}.geojson`
-  if (noCache) url += `?_t=${time}`
+const fetchGeoJSON = async (fileName: string) => {
+  const url = `./data/${fileName}.geojson?_t=${time}`
   const result = await fetch(url)
   const features = await result.json()
   return features
 }
 
-export const getRisk = fetchGeoJSON('risk', true)
-export const getTrackApril = fetchGeoJSON('track_april')
-export const getTrackMarch = fetchGeoJSON('track_march')
-export const getTrackLong = fetchGeoJSON('track_long', true)
-export const getTrackM = fetchGeoJSON('track_m', true)
-export const getTrack14 = fetchGeoJSON('track_14', true)
-export const getTrack7 = fetchGeoJSON('track_7', true)
-export const getTrack3 = fetchGeoJSON('track_3', true)
+const fetchGeoJSONCDN = async (fileName: string) => {
+  const url = `https://cdn.jsdelivr.net/gh/cxiaof/sh-track-info-map/build/data/${fileName}.geojson`
+  const result = await fetch(url)
+  const features = await result.json()
+  return features
+}
+
+export const getRisk = async () => fetchGeoJSON('risk')
+export const getTrackLong = async () =>
+  Promise.all([
+    fetchGeoJSON('track_long'),
+    fetchGeoJSONCDN('track_april_lower'),
+    fetchGeoJSONCDN('track_april_upper'),
+    fetchGeoJSONCDN('track_march'),
+  ])
+export const getTrackM = async () => fetchGeoJSON('track_m')
+export const getTrack14 = async () => fetchGeoJSON('track_14')
+export const getTrack7 = async () => fetchGeoJSON('track_7')
+export const getTrack3 = async () => fetchGeoJSON('track_3')
