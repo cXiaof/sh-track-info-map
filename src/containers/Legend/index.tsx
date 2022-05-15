@@ -24,11 +24,12 @@ const Legend = () => {
 
   const renderTrackLong = useMemoizedFn(async () => {
     try {
-      const features = await services.getTrackLong()
+      const results = await services.getTrackLong()
+      const features = results.reduce((prev, cur) => ({ ...prev, ...cur }), {})
       renderGeometry(features, 'long')
       trackLongActions.setTrue()
     } catch (error) {
-      showFailToast()
+      showFailToast(error)
       loadAllActions.setFalse()
     }
   })
@@ -108,7 +109,8 @@ const renderGeometry = (data: any, type: string) => {
   iconLayer.addGeometry(collection)
 }
 
-const showFailToast = () => {
+const showFailToast = (error: any) => {
+  console.error(error)
   Toast.show({
     icon: 'fail',
     content: (
