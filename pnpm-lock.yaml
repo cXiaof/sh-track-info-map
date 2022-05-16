@@ -8,7 +8,7 @@ specifiers:
   '@types/node': ^17.0.33
   '@types/react': ^18.0.9
   '@types/react-dom': ^18.0.4
-  ahooks: ^3.3.10
+  ahooks: ^3.3.11
   antd-mobile: ^5.12.2
   autoprefixer: ^10.4.7
   axios: ^0.27.2
@@ -34,7 +34,7 @@ specifiers:
 
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
-  ahooks: 3.3.10_react@17.0.2
+  ahooks: 3.3.11_react@17.0.2
   antd-mobile: 5.12.2_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.1
@@ -2906,8 +2906,8 @@ packages:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
     dev: false
 
-  /ahooks/3.3.10_react@17.0.2:
-    resolution: {integrity: sha512-CNZQRnNkvbafV5qdGcx7AT81XJNPa7vAo1XoShvdI8s6oHigTrmc+kWkyWWEywiEchF992Z6oIQEXkSsL034fw==}
+  /ahooks/3.3.11_react@17.0.2:
+    resolution: {integrity: sha512-40kU64ox8K5WzX6JQs/x6sQNdDWB+Xz9B66VySXBj2piytY2Ih3gOotxgRUgeQBsaUl4Bq8FFpfXfYypcyKomw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -3020,7 +3020,7 @@ packages:
       '@floating-ui/dom': 0.4.5
       '@react-spring/web': 9.4.5_sfoxds7t5ydpegc3knd667wn6m
       '@use-gesture/react': 10.2.12_react@17.0.2
-      ahooks: 3.3.10_react@17.0.2
+      ahooks: 3.3.11_react@17.0.2
       antd-mobile-icons: 0.2.2
       antd-mobile-v5-count: 1.0.1
       big.js: 6.1.1
