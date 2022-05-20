@@ -1,5 +1,5 @@
 import * as services from '@/services'
-// import { LocationMarkerIcon } from '@heroicons/react/solid'
+import { LocationMarkerIcon } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
 import { Toast } from 'antd-mobile'
 import React from 'react'
@@ -7,7 +7,7 @@ import LegendItem from './LegendItem'
 import LoadAll from './LoadAll'
 
 const Legend = () => {
-  // const [riskOver, riskOverActions] = useBoolean(false)
+  const [riskOver, riskOverActions] = useBoolean(false)
   const [loadAll, loadAllActions] = useBoolean(false)
   const [track3, track3Actions] = useBoolean(false)
   const [track7, track7Actions] = useBoolean(false)
@@ -15,12 +15,12 @@ const Legend = () => {
   const [trackM, trackMActions] = useBoolean(false)
   const [trackLong, trackLongActions] = useBoolean(false)
 
-  // const renderRisk = useMemoizedFn(async () => {
-  //   const features = await services.getRisk()
-  //   const groupLayer = window.map.getLayer('GroupGL')
-  //   groupLayer.getLayer('risk').addGeometry(features)
-  //   riskOverActions.setTrue()
-  // })
+  const renderRisk = useMemoizedFn(async () => {
+    const features = await services.getRisk()
+    const groupLayer = window.map.getLayer('GroupGL')
+    groupLayer.getLayer('risk').addGeometry(features)
+    riskOverActions.setTrue()
+  })
 
   const renderTrackLong = useMemoizedFn(async () => {
     try {
@@ -65,7 +65,7 @@ const Legend = () => {
 
   useMount(() => {
     window.map.once('loaddata', () => {
-      // renderRisk()
+      renderRisk()
       renderTrack3()
       renderTrack7()
       renderTrack14()
@@ -76,12 +76,12 @@ const Legend = () => {
 
   return (
     <div className='p-2 text-base bg-white bg-opacity-[0.85] rounded-lg pointer-events-auto'>
-      {/* <LegendItem
+      <LegendItem
         loading={!riskOver}
         theme='#696aad'
         icon={<LocationMarkerIcon className='h-5 -ml-[2px]' />}
         title='中风险地区'
-      /> */}
+      />
       <LegendItem loading={!track3} theme='#7c2d12' title='发布<3天' />
       <LegendItem loading={!track7} theme='#c2410c' title='发布<7天' />
       <LegendItem loading={!track14} theme='#f97316' title='发布<14天' />
