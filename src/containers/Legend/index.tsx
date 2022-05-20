@@ -70,7 +70,6 @@ const Legend = () => {
       renderTrack7()
       renderTrack14()
       renderTrackM()
-      handleLoadAll()
     })
   })
 

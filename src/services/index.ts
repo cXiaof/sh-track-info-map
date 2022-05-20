@@ -20,9 +20,8 @@ export const getRisk = async () => fetchGeoJSON('risk')
 export const getTrackLong = async () =>
   Promise.all([
     fetchGeoJSON('track_long'),
-    fetchGeoJSONCDN('track_april_bottom'),
-    fetchGeoJSONCDN('track_april_middle'),
-    fetchGeoJSONCDN('track_april_upper'),
+    fetchGeoJSONCDN('track_april_late'),
+    fetchGeoJSONCDN('track_april_early'),
     fetchGeoJSONCDN('track_march'),
   ])
 export const getTrackM = async () => fetchGeoJSON('track_m')
