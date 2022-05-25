@@ -6,13 +6,13 @@
   "author": "cXiaof",
   "scripts": {
     "build": "craco build",
+    "day": "npm run geo:track && craco build",
     "format": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
     "geo:track": "node geo/track.js && npm run format:geojson",
     "prepublish": "npm run format",
-    "start": "craco start",
-    "up": "npm run geo:track && craco build"
+    "start": "craco start"
   },
   "browserslist": {
     "production": [
