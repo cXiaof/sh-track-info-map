@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "ahooks": "^3.3.13",
+    "ahooks": "^3.4.0",
     "antd-mobile": "^5.12.6",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
@@ -44,7 +44,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
-    "typescript": "^4.6.4",
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
@@ -64,6 +63,7 @@
     "prettier-plugin-organize-imports": "^2.3.4",
     "prettier-plugin-packagejson": "^2.2.18",
     "react-app-alias": "^2.2.0",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.7.2"
   }
 }
