@@ -35,7 +35,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "ahooks": "^3.4.0",
-    "antd-mobile": "^5.12.6",
+    "antd-mobile": "^5.13.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.2",
@@ -50,7 +50,7 @@
     "@craco/craco": "^6.4.3",
     "@types/jest": "^27.5.1",
     "@types/lodash": "^4.14.182",
-    "@types/node": "^17.0.36",
+    "@types/node": "^17.0.38",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.4.7",
