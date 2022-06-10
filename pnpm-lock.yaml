@@ -8,7 +8,7 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.4.1
-  antd-mobile: ^5.14.2
+  antd-mobile: ^5.14.3
   autoprefixer: ^10.4.7
   axios: ^0.27.2
   classnames: ^2.3.1
@@ -27,14 +27,14 @@ specifiers:
   react-app-alias: ^2.2.0
   react-dom: ^17.0.2
   react-scripts: 5.0.1
-  tailwindcss: ^3.1.1
+  tailwindcss: ^3.1.2
   typescript: ^4.7.3
   web-vitals: ^2.1.0
 
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.4.1_react@17.0.2
-  antd-mobile: 5.14.2_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.14.3_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.1
   dayjs: 1.11.3
@@ -61,7 +61,7 @@ devDependencies:
   prettier-plugin-organize-imports: 2.3.4_swzprww56tbt6xqyypkb3snuza
   prettier-plugin-packagejson: 2.2.18_prettier@2.6.2
   react-app-alias: 2.2.0
-  tailwindcss: 3.1.1
+  tailwindcss: 3.1.2
   typescript: 4.7.3
 
 packages:
@@ -2792,8 +2792,8 @@ packages:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.14.2_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-qyd+afJc+tYwCdguW/DhjTFDzpM/TYmgXVcrqSu8+jvVyRva7VuLEquosRw3oxPpjOoJ/l+Ig+p07zPS8CDHXA==}
+  /antd-mobile/5.14.3_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-6BMVLwz9GaA+tBHZkGtURtdjcxGBKYPo4u86unDXAJcZKLeiXpulMDjR3dBkyLAyvgfjt6Vouv4zcUH594nL0A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -8053,7 +8053,7 @@ packages:
       semver: 7.3.7
       source-map-loader: 3.0.1_webpack@5.73.0
       style-loader: 3.3.1_webpack@5.73.0
-      tailwindcss: 3.1.1
+      tailwindcss: 3.1.2
       terser-webpack-plugin: 5.3.3_webpack@5.73.0
       typescript: 4.7.3
       webpack: 5.73.0
@@ -8972,8 +8972,8 @@ packages:
   /symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  /tailwindcss/3.1.1:
-    resolution: {integrity: sha512-F5VFj5FiS4QZqdXPE6T6RJFqbsmISQ2KBUp9bOQyws9TleGToHsa54X8kwXwVdHMQhNeXOlxI47lrRICEVuOvg==}
+  /tailwindcss/3.1.2:
+    resolution: {integrity: sha512-yJ6L5s1U5AeS5g7HHy212zdQfjwD426FBfm59pet/JsyneuZuD4C2W7PpJEg4ppisiB21uLqtNagv8KXury3+Q==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
