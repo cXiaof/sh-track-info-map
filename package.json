@@ -57,7 +57,7 @@
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
     "postcss": "^8.4.14",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.0",
     "prettier-plugin-organize-imports": "^2.3.4",
     "prettier-plugin-packagejson": "^2.2.18",
     "react-app-alias": "^2.2.0",
