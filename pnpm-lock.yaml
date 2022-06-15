@@ -8,7 +8,7 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.4.1
-  antd-mobile: ^5.14.3
+  antd-mobile: ^5.15.0
   autoprefixer: ^10.4.7
   axios: ^0.27.2
   classnames: ^2.3.1
@@ -34,7 +34,7 @@ specifiers:
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.4.1_react@17.0.2
-  antd-mobile: 5.14.3_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.15.0_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.1
   dayjs: 1.11.3
@@ -1490,14 +1490,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@floating-ui/core/0.7.2:
-    resolution: {integrity: sha512-FRVAkSNU/vGXLIsgbggcs70GkXKEOXgBBbNpYPNHSaKsCAMMd00NrjbtKTesxkdv9xm9N3+XiDlcFGY6WnatBg==}
+  /@floating-ui/core/0.7.3:
+    resolution: {integrity: sha512-buc8BXHmG9l82+OQXOFU3Kr2XQx9ys01U/Q9HMIrZ300iLc8HLMgh7dcCqgYzAzf4BkoQvDcXf5Y+CuEZ5JBYg==}
     dev: false
 
-  /@floating-ui/dom/0.5.2:
-    resolution: {integrity: sha512-z1DnEa7F3d8Fm/eXSbii8UEGpcjZGkQaYYUI0WpEVgD3vBfebDW8j/3ysusxonuMexoigA+A3b/fYH7sEqiwyg==}
+  /@floating-ui/dom/0.5.3:
+    resolution: {integrity: sha512-vpjWB1uC7rajvgA58uzlJZgtWqrdDQLw+XVA3w63ZTmsWwRmVd0Gl5Dy9VMAViI9cP7hBWaJt23Jy3AVgVYnoQ==}
     dependencies:
-      '@floating-ui/core': 0.7.2
+      '@floating-ui/core': 0.7.3
     dev: false
 
   /@gar/promisify/1.1.3:
@@ -2784,24 +2784,24 @@ packages:
     resolution: {integrity: sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==}
     engines: {node: '>=10'}
 
-  /antd-mobile-icons/0.2.2:
-    resolution: {integrity: sha512-iquIc7EsQTndk5nMv9pQQv+/OY5YnjVIPhtCFo7W7JL+Gjqzq/YJ/HO2WxUxyCgYha2NsTTNAb2vPa/M4zAi2g==}
+  /antd-mobile-icons/0.3.0:
+    resolution: {integrity: sha512-rqINQpJWZWrva9moCd1Ye695MZYWmqLPE+bY8d2xLRy7iSQwPsinCdZYjpUPp2zL/LnKYSyXxP2ut2A+DC+whQ==}
     dev: false
 
   /antd-mobile-v5-count/1.0.1:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.14.3_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-6BMVLwz9GaA+tBHZkGtURtdjcxGBKYPo4u86unDXAJcZKLeiXpulMDjR3dBkyLAyvgfjt6Vouv4zcUH594nL0A==}
+  /antd-mobile/5.15.0_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-7jL1HPNo57L4eAURcy0kWMyo5zlPQnygl9jVW2kB9JvW/+hkfg5v8ysjEGZzZbXZOy1Vgz6lfgjWoo0rqAPaGQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@floating-ui/dom': 0.5.2
+      '@floating-ui/dom': 0.5.3
       '@react-spring/web': 9.4.5_sfoxds7t5ydpegc3knd667wn6m
       '@use-gesture/react': 10.2.15_react@17.0.2
       ahooks: 3.4.1_react@17.0.2
-      antd-mobile-icons: 0.2.2
+      antd-mobile-icons: 0.3.0
       antd-mobile-v5-count: 1.0.1
       big.js: 6.2.0
       classnames: 2.3.1
@@ -2812,7 +2812,7 @@ packages:
       react-is: 17.0.2
       staged-components: 1.1.3_react@17.0.2
       tslib: 2.4.0
-      use-sync-external-store: 1.1.0_react@17.0.2
+      use-sync-external-store: 1.2.0_react@17.0.2
     transitivePeerDependencies:
       - react-dom
     dev: false
@@ -9332,8 +9332,8 @@ packages:
     dependencies:
       punycode: 2.1.1
 
-  /use-sync-external-store/1.1.0_react@17.0.2:
-    resolution: {integrity: sha512-SEnieB2FPKEVne66NpXPd1Np4R1lTNKfjuy3XdIoPQKYBAFdzbzSZlSn1KJZUiihQLQC5Znot4SBz1EOTBwQAQ==}
+  /use-sync-external-store/1.2.0_react@17.0.2:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
