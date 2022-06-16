@@ -20,7 +20,7 @@ specifiers:
   number-precision: ^1.5.2
   open-color: ^1.9.1
   postcss: ^8.4.14
-  prettier: ^2.7.0
+  prettier: ^2.7.1
   prettier-plugin-organize-imports: ^2.3.4
   prettier-plugin-packagejson: ^2.2.18
   react: ^17.0.2
@@ -57,9 +57,9 @@ devDependencies:
   normalize.css: 8.0.1
   open-color: 1.9.1
   postcss: 8.4.14
-  prettier: 2.7.0
-  prettier-plugin-organize-imports: 2.3.4_qinmk7yenpcxm2r4gdnfx2czaa
-  prettier-plugin-packagejson: 2.2.18_prettier@2.7.0
+  prettier: 2.7.1
+  prettier-plugin-organize-imports: 2.3.4_znad3sgqcpzyslsdeuw235p7my
+  prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
   react-app-alias: 2.2.0
   tailwindcss: 3.1.3
   typescript: 4.7.3
@@ -7745,27 +7745,27 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier-plugin-organize-imports/2.3.4_qinmk7yenpcxm2r4gdnfx2czaa:
+  /prettier-plugin-organize-imports/2.3.4_znad3sgqcpzyslsdeuw235p7my:
     resolution: {integrity: sha512-R8o23sf5iVL/U71h9SFUdhdOEPsi3nm42FD/oDYIZ2PQa4TNWWuWecxln6jlIQzpZTDMUeO1NicJP6lLn2TtRw==}
     peerDependencies:
       prettier: '>=2.0'
       typescript: '>=2.9'
     dependencies:
-      prettier: 2.7.0
+      prettier: 2.7.1
       typescript: 4.7.3
     dev: true
 
-  /prettier-plugin-packagejson/2.2.18_prettier@2.7.0:
+  /prettier-plugin-packagejson/2.2.18_prettier@2.7.1:
     resolution: {integrity: sha512-iBjQ3IY6IayFrQHhXvg+YvKprPUUiIJ04Vr9+EbeQPfwGajznArIqrN33c5bi4JcIvmLHGROIMOm9aYakJj/CA==}
     peerDependencies:
       prettier: '>= 1.16.0'
     dependencies:
-      prettier: 2.7.0
+      prettier: 2.7.1
       sort-package-json: 1.57.0
     dev: true
 
-  /prettier/2.7.0:
-    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
