@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "ahooks": "^3.4.1",
+    "ahooks": "^3.5.0",
     "antd-mobile": "^5.15.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
@@ -58,7 +58,7 @@
     "open-color": "^1.9.1",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
-    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
     "react-app-alias": "^2.2.0",
     "tailwindcss": "^3.1.3",
