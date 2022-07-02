@@ -1,3 +1,5 @@
+import { emptyCollection } from '@/constants/mapConfig'
+import { trackIconLong } from '@/constants/styleConfig'
 import * as services from '@/services'
 import { LocationMarkerIcon } from '@heroicons/react/solid'
 import { useBoolean, useMemoizedFn, useMount } from 'ahooks'
@@ -26,7 +28,15 @@ const Legend = () => {
     try {
       const results = await services.getTrackLong()
       const features = results.reduce((prev, cur) => ({ ...prev, ...cur }), {})
-      renderGeometry(features, 'long')
+      const collection = getValuesCollection(features, emptyCollection)
+
+      const groupLayer = window.map.getLayer('GroupGL')
+      const iconLayer = groupLayer.getLayer(`track_icon_long`)
+      iconLayer.addGeometry(collection)
+
+      const clusterLayer = window.map.getLayer('track_long')
+      clusterLayer.setData(setClusterSymbol(collection))
+
       trackLongActions.setTrue()
     } catch (error) {
       showFailToast(error)
@@ -86,7 +96,7 @@ const Legend = () => {
       <LegendItem loading={!track14} theme='#f97316' title='发布<14天' />
       <LegendItem loading={!trackM} theme='#fdba74' title='发布<1个月' />
       {loadAll ? (
-        <LegendItem loading={!trackLong} theme='#ffedd5' title='发布≥1个月' />
+        <LegendItem loading={!trackLong} theme='#aaa' title='历史数据' />
       ) : (
         <LoadAll loadAll={handleLoadAll} />
       )}
@@ -99,13 +109,23 @@ const renderGeometry = (data: any, type: string) => {
   const tipLayer = groupLayer.getLayer(`track_tip_${type}`)
   const iconLayer = groupLayer.getLayer(`track_icon_${type}`)
 
-  const collection = Object.values(data).reduce((target: any, item: any) => {
-    target.features = [...target.features, ...item.features]
-    return target
-  }, tipLayer.getData())
-
+  const collection = getValuesCollection(data, tipLayer.getData())
   tipLayer.setData(collection)
   iconLayer.addGeometry(collection)
+}
+
+const getValuesCollection = (data: any, lastData: any) => {
+  return Object.values(data).reduce((target: any, item: any) => {
+    target.features = [...target.features, ...item.features]
+    return target
+  }, lastData)
+}
+
+const setClusterSymbol = (collection: any) => {
+  collection.features.forEach((feature: any) => {
+    feature.symbol = trackIconLong
+  })
+  return collection
 }
 
 const showFailToast = (error: any) => {

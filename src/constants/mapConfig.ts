@@ -2,6 +2,8 @@ import * as itemsUtils from '@/utils/itemsUtils'
 import './projectConfig'
 import * as styles from './styleConfig'
 
+export const emptyCollection = { type: 'FeatureCollection', features: [] }
+
 const map = new maptalks.Map('map', {
   center: [121.47362991, 31.23047407],
   zoom: 15,
@@ -20,60 +22,57 @@ const map = new maptalks.Map('map', {
   }),
 })
 
+new maptalks.TileClusterLayer('track_long', {
+  clusterDispersion: true,
+  markerEvents: {
+    click: (e: any) => {
+      const properties = e.target.properties
+      if (properties.isCluster) return
+      setTimeout(() => {
+        map.fire('record', { data: [properties.published_address] })
+      }, 0)
+    },
+  },
+}).addTo(map)
+
 const layers = [
-  new maptalks.GeoJSONVectorTileLayer('track_tip_long', {
-    data: { type: 'FeatureCollection', features: [] },
-    zIndex: 1,
-    minZoom: 15.5,
-    style: styles.trackTipLong,
-  }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_m', {
-    data: { type: 'FeatureCollection', features: [] },
-    zIndex: 2,
+    data: emptyCollection,
     minZoom: 15.5,
     style: styles.trackTipM,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_14', {
-    data: { type: 'FeatureCollection', features: [] },
-    zIndex: 3,
+    data: emptyCollection,
     minZoom: 15.5,
     style: styles.trackTip14,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_7', {
-    data: { type: 'FeatureCollection', features: [] },
-    zIndex: 4,
+    data: emptyCollection,
     minZoom: 15.5,
     style: styles.trackTip7,
   }),
   new maptalks.GeoJSONVectorTileLayer('track_tip_3', {
-    data: { type: 'FeatureCollection', features: [] },
-    zIndex: 5,
+    data: emptyCollection,
     minZoom: 15.5,
     style: styles.trackTip3,
   }),
   new maptalks.PointLayer('track_icon_long', {
-    zIndex: 6,
-    style: styles.trackIconLong,
+    visible: false,
   }),
   new maptalks.PointLayer('track_icon_m', {
-    zIndex: 7,
     style: styles.trackIconM,
   }),
   new maptalks.PointLayer('track_icon_14', {
-    zIndex: 8,
     style: styles.trackIcon14,
   }),
   new maptalks.PointLayer('track_icon_7', {
-    zIndex: 9,
     style: styles.trackIcon7,
   }),
   new maptalks.PointLayer('track_icon_3', {
-    zIndex: 10,
     style: styles.trackIcon3,
   }),
   new maptalks.PointLayer('risk', {
     style: { symbol: styles.riskSymbol },
-    zIndex: 99,
   }),
 ]
 
