@@ -23,6 +23,7 @@ const map = new maptalks.Map('map', {
 })
 
 new maptalks.TileClusterLayer('track_long', {
+  maxClusterZoom: 16,
   clusterDispersion: true,
   markerEvents: {
     click: (e: any) => {
