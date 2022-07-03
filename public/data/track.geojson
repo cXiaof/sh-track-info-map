@@ -14,6 +14,45 @@
           "geocoded_address": "上海市浦东新区祝桥镇施新路802弄",
           "date": 1656777600000
         }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.404917, 31.239925]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "兰溪路148号",
+          "geocoded_address": "上海市普陀区兰溪路148号",
+          "date": 1656777600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.472294, 31.320703]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "殷高西路333号",
+          "geocoded_address": "上海市宝山区殷高西路333号",
+          "date": 1656777600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.47252, 31.320063]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "殷高西路588号",
+          "geocoded_address": "上海市宝山区殷高西路588号",
+          "date": 1656777600000
+        }
       }
     ]
   },

@@ -73,7 +73,7 @@ const layers = [
     style: styles.trackIcon3,
   }),
   new maptalks.PointLayer('risk', {
-    style: { symbol: styles.riskSymbol },
+    style: styles.riskStyle,
   }),
 ]
 

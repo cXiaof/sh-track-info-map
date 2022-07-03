@@ -87,7 +87,13 @@ const Legend = () => {
     <div className='p-2 text-base bg-white bg-opacity-[0.85] rounded-lg pointer-events-auto'>
       <LegendItem
         loading={!riskOver}
-        theme='#696aad'
+        theme='#e52626'
+        icon={<LocationMarkerIcon className='h-5 -ml-[2px]' />}
+        title='中风险地区'
+      />
+      <LegendItem
+        loading={!riskOver}
+        theme='#ffc518'
         icon={<LocationMarkerIcon className='h-5 -ml-[2px]' />}
         title='中风险地区'
       />

@@ -56,41 +56,49 @@ export const trackIconLong = {
   textHaloFill: '#fff',
 }
 
-export const riskSymbol = [
-  {
-    markerType: 'path',
-    markerPathWidth: 12,
-    markerPathHeight: 16,
-    markerWidth: {
-      stops: [
-        [10, window.getTextSize(12)],
-        [18, window.getTextSize(30)],
-      ],
-    },
-    markerHeight: {
-      stops: [
-        [10, window.getTextSize(16)],
-        [18, window.getTextSize(40)],
-      ],
-    },
-    markerPath: [
-      {
-        path: 'M6,16c2.4-2.3,6-6.2,6-9.7C12,2.8,9.3,0,6,0S0,2.8,0,6.3C0,9.8,3.8,14,6,16z',
-        fill: '#696aad',
-      },
+const getRiskSymbol = (theme: string) => ({
+  markerType: 'path',
+  markerPathWidth: 12,
+  markerPathHeight: 16,
+  markerWidth: {
+    stops: [
+      [10, window.getTextSize(12)],
+      [18, window.getTextSize(30)],
     ],
   },
-  {
-    textName: '{published_address}',
-    textFill: '#696aad',
-    textSize: {
-      stops: [
-        [12, 0],
-        [12, 12],
-      ],
+  markerHeight: {
+    stops: [
+      [10, window.getTextSize(16)],
+      [18, window.getTextSize(40)],
+    ],
+  },
+  markerPath: [
+    {
+      path: 'M6,16c2.4-2.3,6-6.2,6-9.7C12,2.8,9.3,0,6,0S0,2.8,0,6.3C0,9.8,3.8,14,6,16z',
+      fill: theme,
     },
-    textDy: 12,
-    textHaloRadius: 1,
-    textHaloFill: 'white',
+  ],
+  textName: '{published_address}',
+  textFill: theme,
+  textSize: {
+    stops: [
+      [12, 0],
+      [12, 12],
+    ],
+  },
+  textDy: 12,
+  textWeight: 'bold',
+  textHaloRadius: 2,
+  textHaloFill: 'white',
+})
+
+export const riskStyle = [
+  {
+    filter: ['==', 'type', 'high'],
+    symbol: getRiskSymbol('#e52626'),
+  },
+  {
+    filter: ['==', 'type', 'medium'],
+    symbol: getRiskSymbol('#ffc518'),
   },
 ]
