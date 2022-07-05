@@ -8,7 +8,7 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.5.2
-  antd-mobile: ^5.17.1
+  antd-mobile: ^5.17.2
   autoprefixer: ^10.4.7
   axios: ^0.27.2
   classnames: ^2.3.1
@@ -34,7 +34,7 @@ specifiers:
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.5.2_react@17.0.2
-  antd-mobile: 5.17.1_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.17.2_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.1
   dayjs: 1.11.3
@@ -2792,8 +2792,8 @@ packages:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.17.1_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-GwchfrMsh7D4Js7kP4zoFJCqU50aMUlT2K95cmkx9Q5XmC87Q2bSi3KJtqrOHjXA+w/nNgTbclRNpwQe5/kEiQ==}
+  /antd-mobile/5.17.2_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-cRT0CUcmH58n8spJuibkWSJbqMjF7A9vJ76PAUGuVYdDNVTD5IulwQw8aZbpEdWtCGiSGvcPjNXuGUxZw8dj3Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
