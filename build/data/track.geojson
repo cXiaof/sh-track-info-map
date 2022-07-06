@@ -1,4 +1,490 @@
 {
+  "2022-07-06": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.559399, 31.259106]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "金杨新村街道浦东大道2511弄19号",
+          "geocoded_address": "上海市浦东新区金杨新村街道浦东大道2511弄19号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.586674, 31.247609]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "金杨新村街道金杨新村十一街坊",
+          "geocoded_address": "上海市浦东新区金杨新村十一街坊",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.598916, 31.251536]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "金桥镇浙桥路99号",
+          "geocoded_address": "上海市浦东新区金桥镇浙桥路99号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.48588, 31.241402]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "外滩街道三和里",
+          "geocoded_address": "上海市黄浦区三和里",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.477037, 31.231299]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "西藏中路180号",
+          "geocoded_address": "上海市黄浦区西藏中路180号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.429608, 31.292083]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "永和二村",
+          "geocoded_address": "上海市静安区永和二村",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.440437, 31.226353]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "新闸路1990弄",
+          "geocoded_address": "上海市静安区新闸路1990弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.44004, 31.22589]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "金家巷西弄",
+          "geocoded_address": "上海市静安区金家巷西弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.449221, 31.271442]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "大宁路660弄",
+          "geocoded_address": "上海市静安区大宁路660弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.428153, 31.225812]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "长宁路189号",
+          "geocoded_address": "上海市静安区长宁路189号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.42304, 31.28493]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "阳城路388弄",
+          "geocoded_address": "上海市静安区阳城路388弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.468441, 31.24547]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "天目中路353号",
+          "geocoded_address": "上海市静安区天目中路353号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.462819, 31.192294]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "江南新村",
+          "geocoded_address": "上海市徐汇区江南新村",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.455536, 31.198738]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "医学院路110弄",
+          "geocoded_address": "上海市徐汇区医学院路110弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.444631, 31.160105]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "融水路99弄",
+          "geocoded_address": "上海市徐汇区融水路99弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.425734, 31.18196]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "宜山路508号",
+          "geocoded_address": "上海市徐汇区宜山路508号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.40167, 31.178404]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "钦州北路1188号",
+          "geocoded_address": "上海市徐汇区钦州北路1188号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.43322, 31.220256]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "愚园路816号",
+          "geocoded_address": "上海市长宁区愚园路816号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.408812, 31.24646]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "曹杨路1208号",
+          "geocoded_address": "上海市普陀区曹杨路1208号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.437501, 31.239613]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "长寿路393号",
+          "geocoded_address": "上海市普陀区长寿路393号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.42603, 31.258412]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "管弄路61弄",
+          "geocoded_address": "上海市普陀区管弄路61弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.427361, 31.252163]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "石泉一村",
+          "geocoded_address": "上海市普陀区石泉一村",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.425687, 31.269086]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "西乡路91弄",
+          "geocoded_address": "上海市普陀区西乡路91弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.401488, 31.247734]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "真如西村文艺小院",
+          "geocoded_address": "上海市普陀区真如西村",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.423142, 31.245686]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "中山北路2451弄200支弄",
+          "geocoded_address": "上海市普陀区中山北路2451弄200支弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.401896, 31.248212]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "兰溪路277号",
+          "geocoded_address": "上海市普陀区兰溪路277号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.483626, 31.260048]
+        },
+        "properties": {
+          "town": "虹口区",
+          "published_address": "四川北路1800号",
+          "geocoded_address": "上海市虹口区四川北路1800号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.545857, 31.271618]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "隆昌路394号",
+          "geocoded_address": "上海市杨浦区隆昌路|394",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.416969, 31.289369]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "沪太路1818号",
+          "geocoded_address": "上海市宝山区沪太路1818号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.416516, 31.02008]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "安宁路777号",
+          "geocoded_address": "上海市闵行区安宁路777号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.391183, 31.107598]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "名都路20弄",
+          "geocoded_address": "上海市闵行区名都路20弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.348014, 31.164284]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "吴宝路428号",
+          "geocoded_address": "上海市闵行区吴宝路428号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.215496, 31.267976]
+        },
+        "properties": {
+          "town": "嘉定区",
+          "published_address": "绿苑路82弄",
+          "geocoded_address": "上海市嘉定区绿苑路82弄",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.274167, 31.108927]
+        },
+        "properties": {
+          "town": "松江区",
+          "published_address": "沪松公路2972弄22号",
+          "geocoded_address": "上海市松江区沪松公路2972弄22号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.120894, 31.027822]
+        },
+        "properties": {
+          "town": "松江区",
+          "published_address": "翔昆路150弄翔昆苑45号",
+          "geocoded_address": "上海市松江区翔昆苑|45号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.23095, 31.01633]
+        },
+        "properties": {
+          "town": "松江区",
+          "published_address": "九峰路118号",
+          "geocoded_address": "上海市松江区九峰路118号",
+          "date": 1657036800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.228016, 31.10454]
+        },
+        "properties": {
+          "town": "松江区",
+          "published_address": "林荫新路1222号",
+          "geocoded_address": "上海市松江区林荫新路",
+          "date": 1657036800000
+        }
+      }
+    ]
+  },
   "2022-07-05": {
     "type": "FeatureCollection",
     "features": [
