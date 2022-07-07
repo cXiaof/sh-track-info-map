@@ -1,12 +1,12 @@
 {
   "name": "sh-track-info-map",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": ".",
   "license": "Apache",
   "author": "cXiaof",
   "scripts": {
     "build": "craco build",
-    "day": "npm run geo:track && craco build",
+    "day": "npm run geo:risk && npm run geo:track && craco build",
     "format": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
