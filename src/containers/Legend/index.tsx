@@ -128,8 +128,9 @@ const getValuesCollection = (data: any, lastData: any) => {
 }
 
 const setClusterSymbol = (collection: any) => {
-  collection.features.forEach((feature: any) => {
+  collection.features = collection.features.reverse().map((feature: any) => {
     feature.symbol = trackIconLong
+    return feature
   })
   return collection
 }
