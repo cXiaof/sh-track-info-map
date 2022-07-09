@@ -1,6 +1,6 @@
 {
   "name": "sh-track-info-map",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "homepage": ".",
   "license": "Apache",
   "author": "cXiaof",
@@ -34,7 +34,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "ahooks": "^3.5.2",
-    "antd-mobile": "^5.17.2",
+    "antd-mobile": "^5.18.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.3",
