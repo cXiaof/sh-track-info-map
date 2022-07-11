@@ -188,6 +188,32 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.508582, 31.200211]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "东三里桥路27号",
+          "geocoded_address": "上海市浦东新区东三里桥路27号",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.512207, 31.197227]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "浦三路21弄31号",
+          "geocoded_address": "上海市浦东新区浦三路21弄31号",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.490921, 31.201773]
         },
         "properties": {
@@ -207,6 +233,32 @@
           "town": "黄浦区",
           "published_address": "半淞园路街道西藏南路1090弄",
           "geocoded_address": "上海市黄浦区半淞园路街道西藏南路1090弄",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.482489, 31.229575]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "宁海东路160号",
+          "geocoded_address": "上海市黄浦区宁海东路160号",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.4809, 31.230499]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "延安东路588号",
+          "geocoded_address": "上海市黄浦区延安东路588号",
           "date": 1657468800000
         }
       },
@@ -331,12 +383,64 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.385001, 31.214136]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "威宁路375号",
+          "geocoded_address": "上海市长宁区威宁路|375",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.435247, 31.242167]
         },
         "properties": {
           "town": "普陀区",
           "published_address": "常德路1298弄",
           "geocoded_address": "上海市普陀区常德路1298弄",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.392081, 31.223241]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "云岭东路235号3号楼",
+          "geocoded_address": "上海市普陀区云岭东路|235号|3号楼",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.395275, 31.222693]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "大渡河路196号",
+          "geocoded_address": "上海市普陀区大渡河路196号",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.36582, 31.232029]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "云岭西路688号",
+          "geocoded_address": "上海市普陀区云岭西路|688号",
           "date": 1657468800000
         }
       },
@@ -701,6 +805,19 @@
           "town": "闵行区",
           "published_address": "天山西路4178弄",
           "geocoded_address": "上海市闵行区天山西路4178弄",
+          "date": 1657468800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.336434, 31.224541]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "北翟路1800号",
+          "geocoded_address": "上海市闵行区北翟路1800号",
           "date": 1657468800000
         }
       },
