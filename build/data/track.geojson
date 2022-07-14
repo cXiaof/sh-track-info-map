@@ -32,12 +32,12 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [121.5596, 31.259598]
+          "coordinates": [121.559399, 31.259106]
         },
         "properties": {
           "town": "浦东新区",
-          "published_address": "金杨新村街道浦东大道2511弄19-5号（长新汽修厂）",
-          "geocoded_address": "上海市浦东新区长新汽修厂家具店",
+          "published_address": "金杨新村街道浦东大道2511弄19-5号",
+          "geocoded_address": "上海市浦东新区金杨新村街道浦东大道2511弄19号",
           "date": 1657728000000
         }
       },
