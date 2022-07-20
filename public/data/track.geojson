@@ -6,6 +6,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.5647, 31.21776]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "花木路1883弄御翠园",
+          "geocoded_address": "上海市浦东新区御翠园",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.454023, 31.317522]
         },
         "properties": {
@@ -64,6 +77,19 @@
           "town": "静安区",
           "published_address": "谈家桥路80弄",
           "geocoded_address": "上海市静安区谈家桥路80弄",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.472446, 31.250004]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "虬江路1150号局东村21号",
+          "geocoded_address": "上海市静安区虬江路1150号局东村21号",
           "date": 1658246400000
         }
       },
@@ -181,6 +207,71 @@
           "town": "宝山区",
           "published_address": "国权北路290弄",
           "geocoded_address": "上海市宝山区国权北路290弄",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.425548, 31.386923]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "蕰川路2226号",
+          "geocoded_address": "上海市宝山区蕰川路|2226",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.468045, 31.397837]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "克山路12号",
+          "geocoded_address": "上海市宝山区克山路12号",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.356003, 31.313182]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "业绩路712号",
+          "geocoded_address": "上海市宝山区业绩路712号",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.481793, 31.334987]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞南八村大门口早餐店",
+          "geocoded_address": "上海市宝山区淞南八村",
+          "date": 1658246400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.481668, 31.33743]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞南镇大昌菜市场",
+          "geocoded_address": "上海市宝山区大昌菜市场",
           "date": 1658246400000
         }
       }
