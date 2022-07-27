@@ -19,6 +19,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.482625, 31.336709]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "宣桥镇宣秋路河南烩面红烧牛肉面",
+          "geocoded_address": "上海市宝山区河南烩面红烧牛肉面",
+          "date": 1658764800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.453698, 31.306704]
         },
         "properties": {
@@ -155,6 +168,58 @@
           "town": "宝山区",
           "published_address": "北宗村严江巷",
           "geocoded_address": "上海市宝山区北宗村严江巷",
+          "date": 1658764800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.429018, 31.382549]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "蕰川路1999弄昊耀科创大厦",
+          "geocoded_address": "上海市宝山区蕰川路1999弄",
+          "date": 1658764800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.382288, 31.355688]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "顾村镇沙浦路443号",
+          "geocoded_address": "上海市宝山区顾村镇沙浦路443号",
+          "date": 1658764800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.420029, 31.336462]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "场北路1079号",
+          "geocoded_address": "上海市宝山区场北路1079号",
+          "date": 1658764800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.171627, 31.391518]
+        },
+        "properties": {
+          "town": "嘉定区",
+          "published_address": "朱戴路1835号",
+          "geocoded_address": "上海市嘉定区朱戴路1835号",
           "date": 1658764800000
         }
       },
