@@ -1,4 +1,22 @@
 {
+  "2022-08-04": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.487452, 31.29728]
+        },
+        "properties": {
+          "town": "虹口区",
+          "published_address": "纪念路350号",
+          "geocoded_address": "上海市虹口区纪念路350号",
+          "date": 1659542400000
+        }
+      }
+    ]
+  },
   "2022-07-31": {
     "type": "FeatureCollection",
     "features": [
