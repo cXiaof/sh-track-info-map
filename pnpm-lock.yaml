@@ -12,7 +12,7 @@ specifiers:
   autoprefixer: ^10.4.8
   axios: ^0.27.2
   classnames: ^2.3.1
-  dayjs: ^1.11.4
+  dayjs: ^1.11.5
   fs-extra: ^10.1.0
   lodash: ^4.17.21
   node-sass: ^7.0.1
@@ -37,7 +37,7 @@ dependencies:
   antd-mobile: 5.21.0_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.1
-  dayjs: 1.11.4
+  dayjs: 1.11.5
   lodash: 4.17.21
   number-precision: 1.5.2
   react: 17.0.2
@@ -2701,7 +2701,7 @@ packages:
     dependencies:
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
-      dayjs: 1.11.4
+      dayjs: 1.11.5
       intersection-observer: 0.12.2
       js-cookie: 2.2.1
       lodash: 4.17.21
@@ -2805,7 +2805,7 @@ packages:
       antd-mobile-v5-count: 1.0.1
       big.js: 6.2.1
       classnames: 2.3.1
-      dayjs: 1.11.4
+      dayjs: 1.11.5
       lodash: 4.17.21
       rc-field-form: 1.27.1_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
@@ -3849,8 +3849,8 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
 
-  /dayjs/1.11.4:
-    resolution: {integrity: sha512-Zj/lPM5hOvQ1Bf7uAvewDaUcsJoI6JmNqmHhHl3nyumwe0XHwt8sWdOVAPACJzCebL8gQCi+K49w7iKWnGwX9g==}
+  /dayjs/1.11.5:
+    resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
     dev: false
 
   /debug/2.6.9:
