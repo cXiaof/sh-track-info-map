@@ -53,6 +53,19 @@
           "geocoded_address": "上海市闵行区虹梅南路3001号",
           "date": 1660406400000
         }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.394671, 31.138947]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "万源路399号",
+          "geocoded_address": "上海市闵行区万源路|399号",
+          "date": 1660406400000
+        }
       }
     ]
   },
