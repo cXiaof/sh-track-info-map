@@ -1,4 +1,48 @@
 {
+  "2022-08-19": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.474011, 31.20035]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "五里桥街道瞿溪路1111弄",
+          "geocoded_address": "上海市黄浦区五里桥街道瞿溪路1111弄",
+          "date": 1660838400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.453731, 31.125658]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "华发路99弄",
+          "geocoded_address": "上海市徐汇区华发路99弄",
+          "date": 1660838400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.397789, 31.144108]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "万源路580弄",
+          "geocoded_address": "上海市闵行区万源路580弄",
+          "date": 1660838400000
+        }
+      }
+    ]
+  },
   "2022-08-18": {
     "type": "FeatureCollection",
     "features": [
