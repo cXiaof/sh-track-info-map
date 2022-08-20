@@ -1,4 +1,48 @@
 {
+  "2022-08-20": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.759243, 31.14781]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "祝桥镇施新路958号",
+          "geocoded_address": "上海市浦东新区祝桥镇施新路958号",
+          "date": 1660924800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.409492, 31.269484]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "新村路1717弄",
+          "geocoded_address": "上海市普陀区新村路1717弄",
+          "date": 1660924800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.441282, 31.081499]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "澄江路1290号",
+          "geocoded_address": "上海市闵行区澄江路1290号",
+          "date": 1660924800000
+        }
+      }
+    ]
+  },
   "2022-08-19": {
     "type": "FeatureCollection",
     "features": [
