@@ -27,6 +27,58 @@
           "geocoded_address": "上海市浦东新区惠南镇靖海路547弄",
           "date": 1661356800000
         }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.456391, 31.247308]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "梅园路330号",
+          "geocoded_address": "上海市静安区梅园路330-360号",
+          "date": 1661356800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.55148, 31.311643]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "民星路160号",
+          "geocoded_address": "上海市杨浦区民星路160号",
+          "date": 1661356800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.513819, 31.294511]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "四平路2152号",
+          "geocoded_address": "上海市杨浦区四平路2152号",
+          "date": 1661356800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.315601, 31.190483]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "申长路630弄1-3号",
+          "geocoded_address": "上海市闵行区申长路630弄1-3号",
+          "date": 1661356800000
+        }
       }
     ]
   },
