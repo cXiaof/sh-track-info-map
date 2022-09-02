@@ -21,7 +21,7 @@ specifiers:
   open-color: ^1.9.1
   postcss: ^8.4.16
   prettier: ^2.7.1
-  prettier-plugin-organize-imports: ^3.1.0
+  prettier-plugin-organize-imports: ^3.1.1
   prettier-plugin-packagejson: ^2.2.18
   react: ^17.0.2
   react-app-alias: ^2.2.1
@@ -58,7 +58,7 @@ devDependencies:
   open-color: 1.9.1
   postcss: 8.4.16
   prettier: 2.7.1
-  prettier-plugin-organize-imports: 3.1.0_hxiikqca7u3owqcguxhaa72gu4
+  prettier-plugin-organize-imports: 3.1.1_hxiikqca7u3owqcguxhaa72gu4
   prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
   react-app-alias: 2.2.1
   tailwindcss: 3.1.8
@@ -7761,10 +7761,10 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier-plugin-organize-imports/3.1.0_hxiikqca7u3owqcguxhaa72gu4:
-    resolution: {integrity: sha512-eufD78FKdkDTyyY9oKxuwEMrfz4/AXrGeyeyjqiRtSBr01DAdGFTq4SgIKvLeqlLkq+ZPJ2H0+BK0e6flRUwJQ==}
+  /prettier-plugin-organize-imports/3.1.1_hxiikqca7u3owqcguxhaa72gu4:
+    resolution: {integrity: sha512-6bHIQzybqA644h0WGUW3gpWEVbMBvzui5wCMRBi7qA++d5ov2xjjfDk8pxJJ/ardfZrGAwizKMq/fQMFdJ+0Zw==}
     peerDependencies:
-      '@volar/vue-typescript': '>=0.39.0'
+      '@volar/vue-typescript': '>=0.40.2'
       prettier: '>=2.0'
       typescript: '>=2.9'
     peerDependenciesMeta:
