@@ -1,4 +1,22 @@
 {
+  "2022-09-02": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.386835, 31.170897]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "万源路2289弄",
+          "geocoded_address": "上海市闵行区万源路2289弄",
+          "date": 1662048000000
+        }
+      }
+    ]
+  },
   "2022-08-31": {
     "type": "FeatureCollection",
     "features": [
