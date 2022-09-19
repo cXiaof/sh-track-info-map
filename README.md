@@ -1,4 +1,4 @@
-### 上海本轮 COVID-19 阳性轨迹信息地图
+### [上海本轮 COVID-19 阳性轨迹信息地图](https://cxiaof.github.io/sh-track-info-map/)
 
 #### 制作目的
 

@@ -6,7 +6,7 @@
   "author": "cXiaof",
   "scripts": {
     "build": "craco build",
-    "day": "npm run geo:risk && npm run geo:track && craco build",
+    "day": "npm run geo:risk && npm run geo:track",
     "format": "prettier --loglevel silent --write \"src/**/*.{html,css,scss,less,js,jsx,ts,tsx,md,json}\"",
     "format:geojson": "prettier --loglevel silent --write \"public/data/track.geojson\"",
     "geo:risk": "node geo/risk.js",
