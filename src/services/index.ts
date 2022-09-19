@@ -10,7 +10,7 @@ const fetchGeoJSON = async (fileName: string) => {
 const fetchGeoJSONCDN = async (fileName: string) => {
   const url = window.debug
     ? `./data/${fileName}.geojson`
-    : `https://cdn.jsdelivr.net/gh/cxiaof/sh-track-info-map/build/data/${fileName}.geojson`
+    : `https://cdn.jsdelivr.net/gh/cxiaof/sh-track-info-map@gh-pages/data/${fileName}.geojson`
   const result = await fetch(url)
   const features = await result.json()
   return features
