@@ -15,11 +15,10 @@ jobs:
         with:
           version: 7
 
-      - name: Install and Build
+      - name: Build
         run: pnpm i && pnpm build
 
-      - name: Build and Deploy
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
-          ssh-key: ${{ secrets.SSH_KEY }}
