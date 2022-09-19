@@ -1,7 +1,7 @@
 {
   "name": "sh-track-info-map",
-  "version": "0.3.4",
-  "homepage": ".",
+  "version": "0.4.0-alpha.1",
+  "homepage": "https://cxiaof.github.io/sh-track-info-map",
   "license": "Apache",
   "author": "cXiaof",
   "scripts": {
