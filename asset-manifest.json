@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/sh-track-info-map/static/css/main.a4026c31.css",
+    "main.js": "/sh-track-info-map/static/js/main.a75a7201.js",
+    "static/js/114.4a509415.chunk.js": "/sh-track-info-map/static/js/114.4a509415.chunk.js",
+    "index.html": "/sh-track-info-map/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a4026c31.css",
+    "static/js/main.a75a7201.js"
+  ]
+}
