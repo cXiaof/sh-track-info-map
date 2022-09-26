@@ -34,7 +34,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "ahooks": "^3.7.1",
-    "antd-mobile": "^5.23.0",
+    "antd-mobile": "^5.24.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.5",
@@ -51,7 +51,7 @@
     "@types/node": "^17.0.43",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.11",
-    "autoprefixer": "^10.4.11",
+    "autoprefixer": "^10.4.12",
     "fs-extra": "^10.1.0",
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
@@ -60,7 +60,7 @@
     "prettier-plugin-organize-imports": "^3.1.1",
     "prettier-plugin-packagejson": "^2.2.18",
     "react-app-alias": "^2.2.2",
-    "sass": "^1.54.9",
+    "sass": "^1.55.0",
     "tailwindcss": "^3.1.8",
     "typescript": "~4.6.4"
   }
