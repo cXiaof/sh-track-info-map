@@ -12,7 +12,6 @@ specifiers:
   autoprefixer: ^10.4.12
   axios: ^0.27.2
   classnames: ^2.3.2
-  cross-env: ^7.0.3
   dayjs: ^1.11.5
   dotenv: ^16.0.3
   fs-extra: ^10.1.0
@@ -54,7 +53,6 @@ devDependencies:
   '@types/react': 17.0.49
   '@types/react-dom': 17.0.17
   autoprefixer: 10.4.12_postcss@8.4.16
-  cross-env: 7.0.3
   dotenv: 16.0.3
   fs-extra: 10.1.0
   normalize.css: 8.0.1
@@ -3500,14 +3498,6 @@ packages:
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
-    dev: true
-
-  /cross-env/7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
-    dependencies:
-      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/7.0.3:
