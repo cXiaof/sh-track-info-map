@@ -78,18 +78,16 @@ const geoAddr = async (addr, town, length) => {
 
 const updateTrackGeoJSON = async (collection, date = today) => {
   collection = addDate(collection, date)
-  const trackGeoJSON = 'public/data/track.geojson'
-  let obj = {}
-  try {
-    obj = await fs.readJson(trackGeoJSON)
-  } catch (error) {
-    console.error('No such file, new.')
-  }
+  const result = await axios.get(
+    'https://cxiaof.github.io/sh-track-info-map/data/track.geojson',
+  )
+  let obj = result.data
   if (obj[date]) {
     obj[date] = collection
   } else {
     obj = { [date]: collection, ...obj }
   }
+  const trackGeoJSON = 'public/data/track.geojson'
   await fs.writeFile(trackGeoJSON, JSON.stringify(obj, null, 2))
 }
 
