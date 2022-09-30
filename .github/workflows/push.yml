@@ -15,8 +15,14 @@ jobs:
         with:
           version: 7
 
+      - name: Install
+        run: pnpm i
+
+      - name: Geo Coding
+        run: cross-env-shell AMAP_KEY=${{secrets.AMAP_KEY}} pnpm day
+
       - name: Build
-        run: pnpm i && pnpm build
+        run: pnpm build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

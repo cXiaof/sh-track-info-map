@@ -1,6 +1,6 @@
 {
   "name": "sh-track-info-map",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "homepage": "https://cxiaof.github.io/sh-track-info-map",
   "license": "Apache",
   "author": "cXiaof",
@@ -52,6 +52,8 @@
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.4.12",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
     "fs-extra": "^10.1.0",
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
