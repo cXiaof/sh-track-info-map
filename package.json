@@ -56,7 +56,7 @@
     "fs-extra": "^10.1.0",
     "normalize.css": "^8.0.1",
     "open-color": "^1.9.1",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.1.1",
     "prettier-plugin-packagejson": "^2.3.0",
