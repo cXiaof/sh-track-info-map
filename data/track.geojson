@@ -1,4 +1,35 @@
 {
+  "2022-10-02": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.401407, 31.146844]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "古美路675弄",
+          "geocoded_address": "上海市闵行区古美路675弄",
+          "date": 1664668800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.406213, 31.077709]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "老沪闵路2828弄",
+          "geocoded_address": "上海市闵行区老沪闵路2828弄",
+          "date": 1664668800000
+        }
+      }
+    ]
+  },
   "2022-10-01": {
     "type": "FeatureCollection",
     "features": [
