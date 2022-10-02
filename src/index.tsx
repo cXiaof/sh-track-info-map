@@ -14,7 +14,7 @@ window.map.on('baselayerload', () => {
   )
 })
 
-fetch(`./data/update_time.json?_t=${Math.random()}`)
+fetch(`/sh-track-info-map/data/update_time.json?_t=${Math.random()}`)
   .then((res) => res.json())
   .then((time) => {
     const date = new Date(time)

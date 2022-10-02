@@ -1,7 +1,7 @@
 const time = new Date().getTime()
 
 const fetchGeoJSON = async (fileName: string) => {
-  const url = `./data/${fileName}.geojson?_t=${time}`
+  const url = `/sh-track-info-map/data/${fileName}.geojson?_t=${time}`
   const result = await fetch(url)
   const features = await result.json()
   return features
@@ -9,7 +9,7 @@ const fetchGeoJSON = async (fileName: string) => {
 
 const fetchGeoJSONCDN = async (fileName: string) => {
   const url = window.debug
-    ? `./data/${fileName}.geojson`
+    ? `/sh-track-info-map/data/${fileName}.geojson`
     : `https://cdn.jsdelivr.net/gh/cxiaof/sh-track-info-map@gh-pages/data/${fileName}.geojson`
   const result = await fetch(url)
   const features = await result.json()
