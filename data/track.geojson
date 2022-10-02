@@ -6,6 +6,58 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.596164, 31.038459]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "沪南公路5469弄49号",
+          "geocoded_address": "上海市浦东新区沪南公路5469弄49号",
+          "date": 1664668800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.428628, 31.167713]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "漕宝路70号",
+          "geocoded_address": "上海市徐汇区漕宝路70号",
+          "date": 1664668800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.427847, 31.166465]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "习勤路22号",
+          "geocoded_address": "上海市徐汇区习勤路22号",
+          "date": 1664668800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.427857, 31.165939]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "习勤路50号",
+          "geocoded_address": "上海市徐汇区习勤路50号",
+          "date": 1664668800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.401407, 31.146844]
         },
         "properties": {
