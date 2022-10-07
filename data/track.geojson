@@ -45,6 +45,123 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.466306, 31.223069]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "巨鹿路158号",
+          "geocoded_address": "上海市黄浦区巨鹿路158-168号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.468992, 31.220494]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "淮海中路523号",
+          "geocoded_address": "上海市黄浦区淮海中路523号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.451622, 31.220524]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "巨鹿路758号1幢",
+          "geocoded_address": "上海市黄浦区巨鹿路|758|1号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.443106, 31.221911]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "南京西路1856号",
+          "geocoded_address": "上海市静安区南京西路1856号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.443083, 31.226052]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "北京西路1700号",
+          "geocoded_address": "上海市静安区北京西路1700号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.442665, 31.222828]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "乌鲁木齐北路191号",
+          "geocoded_address": "上海市静安区乌鲁木齐北路191号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.483626, 31.260048]
+        },
+        "properties": {
+          "town": "虹口区",
+          "published_address": "四川北路1800号",
+          "geocoded_address": "上海市虹口区四川北路1800号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.438095, 31.216202]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "镇宁路83号",
+          "geocoded_address": "上海市长宁区镇宁路83号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.420041, 31.206692]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "杨宅路20号",
+          "geocoded_address": "上海市长宁区杨宅路20号",
+          "date": 1665100800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.316487, 31.242254]
         },
         "properties": {
