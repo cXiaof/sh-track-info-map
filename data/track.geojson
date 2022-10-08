@@ -32,6 +32,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.428301, 31.183882]
+        },
+        "properties": {
+          "town": "徐汇区",
+          "published_address": "宜山路455号",
+          "geocoded_address": "上海市徐汇区宜山路455号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.423717, 31.206814]
         },
         "properties": {
@@ -77,6 +90,32 @@
           "town": "长宁区",
           "published_address": "延安西路488号",
           "geocoded_address": "上海市长宁区延安西路488号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.405063, 31.23907]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "兰溪路137号",
+          "geocoded_address": "上海市普陀区兰溪路137号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.402233, 31.241937]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "兰溪路185号",
+          "geocoded_address": "上海市普陀区兰溪路185号",
           "date": 1665187200000
         }
       },
@@ -142,6 +181,84 @@
           "town": "闵行区",
           "published_address": "永平南路198弄",
           "geocoded_address": "上海市闵行区永平南路198弄",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.397872, 31.13134]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "闵虹路8号",
+          "geocoded_address": "上海市闵行区闵虹路8号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.182121, 31.192229]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "重固镇大街518弄逸皓华庭",
+          "geocoded_address": "上海市青浦区逸皓华庭",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.188431, 31.194135]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "赵重公路2778弄25号",
+          "geocoded_address": "上海市青浦区赵重公路二七七八弄25号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.184161, 31.194136]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "赵重公路2777弄56号",
+          "geocoded_address": "上海市青浦区赵重公路2777弄56号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.2279, 31.199132]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "华新镇凤中路238号",
+          "geocoded_address": "上海市青浦区华新镇凤中路238号",
+          "date": 1665187200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.206512, 31.190396]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "北青公路5777号",
+          "geocoded_address": "上海市青浦区北青公路5777号",
           "date": 1665187200000
         }
       }
