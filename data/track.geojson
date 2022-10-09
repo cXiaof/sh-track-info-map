@@ -1,4 +1,165 @@
 {
+  "2022-10-09": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.587904, 31.243796]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "金桥镇红枫路108弄",
+          "geocoded_address": "上海市浦东新区金桥镇红枫路108弄",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.581896, 31.252765]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "金杨新村街道金杨路11-35号",
+          "geocoded_address": "上海市浦东新区金杨路|11号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.47102, 31.204351]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "打浦桥街道打浦路15号",
+          "geocoded_address": "上海市黄浦区打浦桥街道打浦路15号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.424138, 31.224123]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "长宁支路306弄",
+          "geocoded_address": "上海市长宁区长宁支路306弄",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.411588, 31.212288]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "玉屏南路9号",
+          "geocoded_address": "上海市长宁区玉屏南路9号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.447276, 31.260128]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "泰山一村",
+          "geocoded_address": "上海市普陀区泰山一村",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.359268, 31.231874]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "丁香苑",
+          "geocoded_address": "上海市普陀区建德花园丁香苑",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.404776, 31.240023]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "兰溪路锐思特酒店",
+          "geocoded_address": "上海市普陀区兰溪路锐思特酒店(上海普陀中心医院华师大兰溪路店)",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.410376, 31.353538]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "富联路128弄",
+          "geocoded_address": "上海市宝山区富联路128弄",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.394497, 31.045698]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "中春路1299号",
+          "geocoded_address": "上海市闵行区中春路1299号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.316487, 31.242254]
+        },
+        "properties": {
+          "town": "嘉定区",
+          "published_address": "金园一路1359弄",
+          "geocoded_address": "上海市嘉定区金园一路1359弄",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.224293, 31.225112]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "重固镇中新村",
+          "geocoded_address": "上海市青浦区中新村",
+          "date": 1665273600000
+        }
+      }
+    ]
+  },
   "2022-10-08": {
     "type": "FeatureCollection",
     "features": [
