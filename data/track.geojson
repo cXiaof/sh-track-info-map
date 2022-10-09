@@ -71,6 +71,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.403265, 31.20897]
+        },
+        "properties": {
+          "town": "长宁区",
+          "published_address": "娄山关路533号",
+          "geocoded_address": "上海市长宁区娄山关路533号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.447276, 31.260128]
         },
         "properties": {
@@ -129,6 +142,45 @@
           "town": "闵行区",
           "published_address": "中春路1299号",
           "geocoded_address": "上海市闵行区中春路1299号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.402449, 31.039876]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "北松公路489号蹦床乐园",
+          "geocoded_address": "上海市闵行区北松公路489号",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.369488, 31.110073]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "莘沥路366弄莘松八村",
+          "geocoded_address": "上海市闵行区莘松八村",
+          "date": 1665273600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.460479, 31.030185]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "紫凤路500号",
+          "geocoded_address": "上海市闵行区紫凤路500号",
           "date": 1665273600000
         }
       },
