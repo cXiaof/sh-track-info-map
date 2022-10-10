@@ -209,6 +209,71 @@
           "geocoded_address": "上海市闵行区东川路333弄",
           "date": 1665360000000
         }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.384996, 31.16416]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "合川路2555号",
+          "geocoded_address": "上海市闵行区合川路2555号",
+          "date": 1665360000000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.375148, 31.177571]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "金汇路416号",
+          "geocoded_address": "上海市闵行区金汇路416号",
+          "date": 1665360000000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.374512, 31.177612]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "金汇路461号",
+          "geocoded_address": "上海市闵行区金汇路461号",
+          "date": 1665360000000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.372746, 31.174819]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "吴中路1588号",
+          "geocoded_address": "上海市闵行区吴中路1588号",
+          "date": 1665360000000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.369015, 31.170281]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "吴中路1599号",
+          "geocoded_address": "上海市闵行区吴中路1599号",
+          "date": 1665360000000
+        }
       }
     ]
   },
