@@ -45,6 +45,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.467693, 31.206953]
+        },
+        "properties": {
+          "town": "黄浦区",
+          "published_address": "徐家汇路618号打浦桥日月光中心",
+          "geocoded_address": "上海市黄浦区日月光中心",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.460693, 31.252058]
         },
         "properties": {
@@ -175,6 +188,32 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.465026, 31.302056]
+        },
+        "properties": {
+          "town": "虹口区",
+          "published_address": "广粤路1577弄",
+          "geocoded_address": "上海市虹口区广粤路1577弄",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.484555, 31.284764]
+        },
+        "properties": {
+          "town": "虹口区",
+          "published_address": "中山北一路666号",
+          "geocoded_address": "上海市虹口区中山北一路666号",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.426346, 31.301956]
         },
         "properties": {
@@ -214,12 +253,64 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.36342, 31.348951]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "宝菊路377号",
+          "geocoded_address": "上海市宝山区宝菊路377号",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.372395, 31.173954]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "虹井路120弄爱琴海购物中心",
+          "geocoded_address": "上海市闵行区爱琴海购物中心",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.280323, 31.157944]
         },
         "properties": {
           "town": "青浦区",
           "published_address": "徐和路58弄",
           "geocoded_address": "上海市青浦区徐和路",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.18369, 30.826219]
+        },
+        "properties": {
+          "town": "金山区",
+          "published_address": "吕巷镇建新大街71号",
+          "geocoded_address": "上海市金山区吕巷镇建新大街71号",
+          "date": 1665532800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.178585, 30.828266]
+        },
+        "properties": {
+          "town": "金山区",
+          "published_address": "金张公路4849号",
+          "geocoded_address": "上海市金山区金张公路4849号",
           "date": 1665532800000
         }
       }
