@@ -97,6 +97,19 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.450051, 31.292868]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "共和新路汶水路公交车站",
+          "geocoded_address": "上海市静安区共和新路汶水路站",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.403551, 31.212536]
         },
         "properties": {
@@ -279,6 +292,84 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.491211, 31.369077]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞兴西路98号",
+          "geocoded_address": "上海市宝山区淞兴西路98号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.489304, 31.368242]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞兴西路208号",
+          "geocoded_address": "上海市宝山区淞兴西路208号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.488554, 31.36761]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞兴西路248号",
+          "geocoded_address": "上海市宝山区淞兴西路248号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.486953, 31.366332]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞兴西路258号",
+          "geocoded_address": "上海市宝山区淞兴西路258号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.487442, 31.368999]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "淞滨支路88号",
+          "geocoded_address": "上海市宝山区淞滨支路|88号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.494785, 31.381315]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "牡丹江路318号",
+          "geocoded_address": "上海市宝山区牡丹江路318号",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.350675, 31.166192]
         },
         "properties": {
@@ -337,6 +428,19 @@
           "town": "金山区",
           "published_address": "吕巷镇姚家村",
           "geocoded_address": "上海市金山区姚家村",
+          "date": 1665619200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.39551, 31.617901]
+        },
+        "properties": {
+          "town": "崇明区",
+          "published_address": "八一路56号",
+          "geocoded_address": "上海市崇明区八一路56号",
           "date": 1665619200000
         }
       }
