@@ -6,7 +6,8 @@ const dayjs = require('dayjs')
 
 dotenv.config({ path: '.env.local' })
 
-const today = dayjs().format('YYYY-MM-DD')
+// const today = dayjs().format('YYYY-MM-DD')
+const today = '2022-10-14'
 
 const sleep = (time) => {
   return new Promise((resolve) => {
