@@ -318,6 +318,32 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.302774, 31.205119]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "华翔路2239号",
+          "geocoded_address": "上海市闵行区华翔路2239号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.30906, 31.20099]
+        },
+        "properties": {
+          "town": "闵行区",
+          "published_address": "申滨路473号",
+          "geocoded_address": "上海市闵行区申滨路473号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.191881, 31.276024]
         },
         "properties": {
@@ -389,6 +415,97 @@
           "town": "松江区",
           "published_address": "涞坊路288弄",
           "geocoded_address": "上海市松江区涞坊路288弄",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.275864, 31.163618]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇联民路464号",
+          "geocoded_address": "上海市青浦区徐泾镇联民路464号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.270334, 31.169694]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇明珠路258弄2号",
+          "geocoded_address": "上海市青浦区徐泾镇明珠路258弄2号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.267632, 31.175045]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇明珠路516弄105号",
+          "geocoded_address": "上海市青浦区明珠路516弄|105号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.27564, 31.173198]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇盈港东路1565号",
+          "geocoded_address": "上海市青浦区盈港东路|1565",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.277386, 31.17382]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇盈港东路1513号",
+          "geocoded_address": "上海市青浦区徐泾镇盈港东路1513号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.271156, 31.169324]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇明珠路258弄5号",
+          "geocoded_address": "上海市青浦区徐泾镇明珠路258弄5号",
+          "date": 1665705600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.270652, 31.169527]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐泾镇明珠路258弄徐泾菜市场",
+          "geocoded_address": "上海市青浦区徐泾菜市场",
           "date": 1665705600000
         }
       },
