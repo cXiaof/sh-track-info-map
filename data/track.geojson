@@ -1,4 +1,204 @@
 {
+  "2022-10-17": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.580787, 31.276582]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "沪东新村街道朱家门小区",
+          "geocoded_address": "上海市浦东新区朱家门小区",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.517824, 31.240934]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "陆家嘴街道荣成路85弄",
+          "geocoded_address": "上海市浦东新区陆家嘴街道荣成路85弄",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.5954, 31.259611]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "浦兴路街道金桥湾清水苑",
+          "geocoded_address": "上海市浦东新区清水苑",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.461604, 31.253318]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "中华新路640号",
+          "geocoded_address": "上海市普陀区中华新路|640号",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.456787, 31.291393]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "广延路1199弄",
+          "geocoded_address": "上海市静安区广延路1199弄",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.398958, 31.289522]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "真大路358弄",
+          "geocoded_address": "上海市宝山区真大路358弄",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.444622, 31.335508]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "通河三村",
+          "geocoded_address": "上海市宝山区通河三村",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.445234, 31.330689]
+        },
+        "properties": {
+          "town": "宝山区",
+          "published_address": "通河四村",
+          "geocoded_address": "上海市宝山区通河四村",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.26877, 31.167297]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "育才路588号",
+          "geocoded_address": "上海市青浦区育才路588号",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.310536, 31.159438]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐南路300号",
+          "geocoded_address": "上海市青浦区徐南路300号",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.280323, 31.157944]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "徐和路58弄",
+          "geocoded_address": "上海市青浦区徐和路",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.286348, 31.174074]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "蟠龙路151弄",
+          "geocoded_address": "上海市青浦区蟠龙路151弄",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.257669, 31.190788]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "明珠路1689弄",
+          "geocoded_address": "上海市青浦区明珠路1689弄",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.263029, 31.157084]
+        },
+        "properties": {
+          "town": "青浦区",
+          "published_address": "沪青平公路2103号",
+          "geocoded_address": "上海市青浦区沪青平公路2103号",
+          "date": 1665964800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.466195, 31.60741]
+        },
+        "properties": {
+          "town": "崇明区",
+          "published_address": "侯南村",
+          "geocoded_address": "上海市崇明区侯南村",
+          "date": 1665964800000
+        }
+      }
+    ]
+  },
   "2022-10-16": {
     "type": "FeatureCollection",
     "features": [
