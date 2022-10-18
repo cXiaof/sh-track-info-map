@@ -8,7 +8,7 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.7.1
-  antd-mobile: ^5.24.0
+  antd-mobile: ^5.24.1
   autoprefixer: ^10.4.12
   axios: ^0.27.2
   classnames: ^2.3.2
@@ -35,7 +35,7 @@ specifiers:
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.7.1_react@17.0.2
-  antd-mobile: 5.24.0_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.24.1_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.2
   dayjs: 1.11.5
@@ -2495,16 +2495,16 @@ packages:
       '@typescript-eslint/types': 5.36.2
       eslint-visitor-keys: 3.3.0
 
-  /@use-gesture/core/10.2.17:
-    resolution: {integrity: sha512-62hCybe4x6oGZ1/JA9gSYIdghV1FqxCdvYWt9SqCEAAikwT1OmVl2Q/Uu8CP636L57D+DfXtw6PWM+fdhr4oJQ==}
+  /@use-gesture/core/10.2.20:
+    resolution: {integrity: sha512-4lFhHc8so4yIHkBEs641DnEsBxPyhJ5GEjB4PURFDH4p/FcZriH6w99knZgI63zN/MBFfylMyb8+PDuj6RIXKQ==}
     dev: false
 
-  /@use-gesture/react/10.2.17_react@17.0.2:
-    resolution: {integrity: sha512-Vfrp1KgdYn/kOEUAYNXtGBCl2dr38s3G6rru1TOPs+cVUjfNyNxvJK56grUyJ336N3rQLK8F9G7+FfrHuc3g/Q==}
+  /@use-gesture/react/10.2.20_react@17.0.2:
+    resolution: {integrity: sha512-KnJq9ZSqprWA6uNhWTUHZqTCh+rfa0j8ehTzqeBhktUPrmTj7yVOBvEQ/vSFU/7d72cGgWSsJ0f5T6GQCHXnvg==}
     peerDependencies:
       react: '>= 16.8.0'
     dependencies:
-      '@use-gesture/core': 10.2.17
+      '@use-gesture/core': 10.2.20
       react: 17.0.2
     dev: false
 
@@ -2783,14 +2783,14 @@ packages:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.24.0_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-1KInQRoS7q9REofutlE8qSat0qRrzABRYDkhEwE50PDlimFFCVAxLGc/0ovgwtVahtxNbrsIu4x4OP0sCJtM+A==}
+  /antd-mobile/5.24.1_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-WhiSVH8XZOusjdgTvkZ2qi1Y3c0BZXilJFipZMHiqaV+DZoE6NKtHJMUomGX4IsrbVG0U0mF0VOqD53LXwGTxQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       '@floating-ui/dom': 1.0.2
       '@react-spring/web': 9.5.5_sfoxds7t5ydpegc3knd667wn6m
-      '@use-gesture/react': 10.2.17_react@17.0.2
+      '@use-gesture/react': 10.2.20_react@17.0.2
       ahooks: 3.7.1_react@17.0.2
       antd-mobile-icons: 0.3.0
       antd-mobile-v5-count: 1.0.1
@@ -2798,7 +2798,7 @@ packages:
       classnames: 2.3.2
       dayjs: 1.11.5
       lodash: 4.17.21
-      rc-field-form: 1.27.1_sfoxds7t5ydpegc3knd667wn6m
+      rc-field-form: 1.27.2_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-is: 17.0.2
       runes: 0.4.3
@@ -7364,8 +7364,8 @@ packages:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  /rc-field-form/1.27.1_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-RShegnwFu6TH8tl2olCxn+B4Wyh5EiQH8c/7wucbkLNyue05YiH5gomUAg1vbZjp71yFKwegClctsEG5CNBWAA==}
+  /rc-field-form/1.27.2_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-NaTjkSB8JsHRgm52wkDorsDzFf2HH6GmCQ2AqkwO8zo+zIqybw8K1lkzDBMDJI8nw1pFuD46U5QsYZv4blYvdw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
