@@ -8,11 +8,11 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.7.2
-  antd-mobile: ^5.24.1
+  antd-mobile: ^5.24.2
   autoprefixer: ^10.4.12
   axios: ^0.27.2
   classnames: ^2.3.2
-  dayjs: ^1.11.5
+  dayjs: ^1.11.6
   dotenv: ^16.0.3
   fs-extra: ^10.1.0
   lodash: ^4.17.21
@@ -35,10 +35,10 @@ specifiers:
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.7.2_react@17.0.2
-  antd-mobile: 5.24.1_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.24.2_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.2
-  dayjs: 1.11.5
+  dayjs: 1.11.6
   lodash: 4.17.21
   number-precision: 1.5.2
   react: 17.0.2
@@ -1522,8 +1522,8 @@ packages:
     resolution: {integrity: sha512-bO37brCPfteXQfFY0DyNDGB3+IMe4j150KFQcgJ5aBP295p9nBGeHEs/p0czrRbtlHq4Px/yoPXO/+dOCcF4uA==}
     dev: false
 
-  /@floating-ui/dom/1.0.2:
-    resolution: {integrity: sha512-5X9WSvZ8/fjy3gDu8yx9HAA4KG1lazUN2P4/VnaXLxTO9Dz53HI1oYoh1OlhqFNlHgGDiwFX5WhFCc2ljbW3yA==}
+  /@floating-ui/dom/1.0.3:
+    resolution: {integrity: sha512-6H1kwjkOZKabApNtXRiYHvMmYJToJ1DV7rQ3xc/WJpOABhQIOJJOdz2AOejj8X+gcybaFmBpisVTZxBZAM3V0w==}
     dependencies:
       '@floating-ui/core': 1.0.1
     dev: false
@@ -2692,7 +2692,7 @@ packages:
     dependencies:
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
-      dayjs: 1.11.5
+      dayjs: 1.11.6
       intersection-observer: 0.12.2
       js-cookie: 2.2.1
       lodash: 4.17.21
@@ -2783,12 +2783,12 @@ packages:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.24.1_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-WhiSVH8XZOusjdgTvkZ2qi1Y3c0BZXilJFipZMHiqaV+DZoE6NKtHJMUomGX4IsrbVG0U0mF0VOqD53LXwGTxQ==}
+  /antd-mobile/5.24.2_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-X/o+PwYm/pDawT8TnnNaKgGq3L6oGvVQTwrDLWutlnKn3rQc2TAhXiJNepb0iiFV4DZS++omnBkSMrflXHvplA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@floating-ui/dom': 1.0.2
+      '@floating-ui/dom': 1.0.3
       '@react-spring/web': 9.5.5_sfoxds7t5ydpegc3knd667wn6m
       '@use-gesture/react': 10.2.20_react@17.0.2
       ahooks: 3.7.2_react@17.0.2
@@ -2796,7 +2796,7 @@ packages:
       antd-mobile-v5-count: 1.0.1
       big.js: 6.2.1
       classnames: 2.3.2
-      dayjs: 1.11.5
+      dayjs: 1.11.6
       lodash: 4.17.21
       rc-field-form: 1.27.2_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
@@ -3731,8 +3731,8 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
 
-  /dayjs/1.11.5:
-    resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
+  /dayjs/1.11.6:
+    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
     dev: false
 
   /debug/2.6.9:
