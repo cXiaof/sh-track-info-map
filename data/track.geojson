@@ -1,4 +1,48 @@
 {
+  "2022-10-23": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.612442, 31.025388]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "航都南路29弄",
+          "geocoded_address": "上海市浦东新区航都南路29弄",
+          "date": 1666483200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.4799, 31.246584]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "山西北路388弄",
+          "geocoded_address": "上海市静安区山西北路388弄",
+          "date": 1666483200000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.398663, 31.22958]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "龚家宅第一小区",
+          "geocoded_address": "上海市普陀区第一小区",
+          "date": 1666483200000
+        }
+      }
+    ]
+  },
   "2022-10-22": {
     "type": "FeatureCollection",
     "features": [
