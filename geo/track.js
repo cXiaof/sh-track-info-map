@@ -61,7 +61,7 @@ const geoAddr = async (addr, town, length) => {
     params: { key: process.env.AMAP_KEY, city: '上海', address },
   })
   const data = result.data.geocodes[0]
-  if (town) sleep(length)
+  if (town) await sleep(length)
   return {
     type: 'Feature',
     geometry: {
