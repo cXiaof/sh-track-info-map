@@ -58,6 +58,58 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.528911, 31.267122]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "长阳路1381-1号",
+          "geocoded_address": "上海市杨浦区长阳路|1381|-1号",
+          "date": 1666828800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.52802, 31.266713]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "长阳路1289-1号",
+          "geocoded_address": "上海市杨浦区长阳路|1289|-1号",
+          "date": 1666828800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.515533, 31.273489]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "双辽路758号-1",
+          "geocoded_address": "上海市杨浦区双辽路|758|1",
+          "date": 1666828800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.530554, 31.2681]
+        },
+        "properties": {
+          "town": "杨浦区",
+          "published_address": "眉州路888号",
+          "geocoded_address": "上海市杨浦区眉州路888号",
+          "date": 1666828800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.318905, 30.745233]
         },
         "properties": {
