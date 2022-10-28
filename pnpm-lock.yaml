@@ -17,7 +17,7 @@ specifiers:
   fs-extra: ^10.1.0
   lodash: ^4.17.21
   normalize.css: ^8.0.1
-  number-precision: ^1.5.2
+  number-precision: ^1.6.0
   open-color: ^1.9.1
   postcss: ^8.4.18
   prettier: ^2.7.1
@@ -40,7 +40,7 @@ dependencies:
   classnames: 2.3.2
   dayjs: 1.11.6
   lodash: 4.17.21
-  number-precision: 1.5.2
+  number-precision: 1.6.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-scripts: 5.0.1_kygmw5l4su2f3o3hwbyhq7p5y4
@@ -6258,8 +6258,8 @@ packages:
     dependencies:
       boolbase: 1.0.0
 
-  /number-precision/1.5.2:
-    resolution: {integrity: sha512-q7C1ZW3FyjsJ+IpGB6ykX8OWWa5+6M+hEY0zXBlzq1Sq1IPY9GeI3CQ9b2i6CMIYoeSuFhop2Av/OhCxClXqag==}
+  /number-precision/1.6.0:
+    resolution: {integrity: sha512-05OLPgbgmnixJw+VvEh18yNPUo3iyp4BEWJcrLu4X9W05KmMifN7Mu5exYvQXqxxeNWhvIF+j3Rij+HmddM/hQ==}
     dev: false
 
   /nwsapi/2.2.2:
