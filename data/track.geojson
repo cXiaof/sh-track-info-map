@@ -97,6 +97,45 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.662727, 31.142738]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "迪士尼乐园",
+          "geocoded_address": "上海市浦东新区迪士尼乐园",
+          "date": 1667174400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.740025, 31.171902]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "江晖路409弄",
+          "geocoded_address": "上海市浦东新区江晖路409弄",
+          "date": 1667174400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.749836, 31.17561]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "晨阳路158号",
+          "geocoded_address": "上海市浦东新区晨阳路158号",
+          "date": 1667174400000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.398331, 31.004124]
         },
         "properties": {
