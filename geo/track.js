@@ -20,6 +20,8 @@ const geoTrackToday = async () => {
   if (trackToday) {
     const collection = await getGeoCollection(trackToday)
     await updateTrackGeoJSON(collection)
+  } else {
+    await updateTrackGeoJSON()
   }
   await splitJSON()
   updateLastUpdateTime()
@@ -77,15 +79,17 @@ const geoAddr = async (addr, town, length) => {
 }
 
 const updateTrackGeoJSON = async (collection, date = today) => {
-  collection = addDate(collection, date)
   const result = await axios.get(
     'https://cxiaof.github.io/sh-track-info-map/data/track.geojson',
   )
   let obj = result.data
-  if (obj[date]) {
-    obj[date] = collection
-  } else {
-    obj = { [date]: collection, ...obj }
+  if (collection) {
+    collection = addDate(collection, date)
+    if (obj[date]) {
+      obj[date] = collection
+    } else {
+      obj = { [date]: collection, ...obj }
+    }
   }
   const trackGeoJSON = 'public/data/track.geojson'
   await fs.writeFile(trackGeoJSON, JSON.stringify(obj, null, 2))
