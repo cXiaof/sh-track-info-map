@@ -8,7 +8,7 @@ specifiers:
   '@types/react': ^17.0.45
   '@types/react-dom': ^17.0.11
   ahooks: ^3.7.2
-  antd-mobile: ^5.24.2
+  antd-mobile: ^5.25.0
   autoprefixer: ^10.4.13
   axios: ^0.27.2
   classnames: ^2.3.2
@@ -35,7 +35,7 @@ specifiers:
 dependencies:
   '@heroicons/react': 1.0.6_react@17.0.2
   ahooks: 3.7.2_react@17.0.2
-  antd-mobile: 5.24.2_sfoxds7t5ydpegc3knd667wn6m
+  antd-mobile: 5.25.0_sfoxds7t5ydpegc3knd667wn6m
   axios: 0.27.2
   classnames: 2.3.2
   dayjs: 1.11.6
@@ -1522,8 +1522,8 @@ packages:
     resolution: {integrity: sha512-bO37brCPfteXQfFY0DyNDGB3+IMe4j150KFQcgJ5aBP295p9nBGeHEs/p0czrRbtlHq4Px/yoPXO/+dOCcF4uA==}
     dev: false
 
-  /@floating-ui/dom/1.0.3:
-    resolution: {integrity: sha512-6H1kwjkOZKabApNtXRiYHvMmYJToJ1DV7rQ3xc/WJpOABhQIOJJOdz2AOejj8X+gcybaFmBpisVTZxBZAM3V0w==}
+  /@floating-ui/dom/1.0.4:
+    resolution: {integrity: sha512-maYJRv+sAXTy4K9mzdv0JPyNW5YPVHrqtY90tEdI6XNpuLOP26Ci2pfwPsKBA/Wh4Z3FX5sUrtUFTdMYj9v+ug==}
     dependencies:
       '@floating-ui/core': 1.0.1
     dev: false
@@ -2783,12 +2783,12 @@ packages:
     resolution: {integrity: sha512-YGsiEDCPUDz3SzfXi6gLZn/HpeSMW+jgPc4qiYUr1fSopg3hkUie2TnooJdExgfiETHefH3Ggs58He0OVfegLA==}
     dev: false
 
-  /antd-mobile/5.24.2_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-X/o+PwYm/pDawT8TnnNaKgGq3L6oGvVQTwrDLWutlnKn3rQc2TAhXiJNepb0iiFV4DZS++omnBkSMrflXHvplA==}
+  /antd-mobile/5.25.0_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-v72GMsvhQBAGKdYZVRwZS+hCUo6GB7QZTMSCcONEXalyh3whXCCBzMhzbJ74w6OwdEv87LmSLYPca26hX7FfqQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@floating-ui/dom': 1.0.3
+      '@floating-ui/dom': 1.0.4
       '@react-spring/web': 9.5.5_sfoxds7t5ydpegc3knd667wn6m
       '@use-gesture/react': 10.2.20_react@17.0.2
       ahooks: 3.7.2_react@17.0.2
@@ -2798,7 +2798,7 @@ packages:
       classnames: 2.3.2
       dayjs: 1.11.6
       lodash: 4.17.21
-      rc-field-form: 1.27.2_sfoxds7t5ydpegc3knd667wn6m
+      rc-field-form: 1.27.3_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-is: 17.0.2
       runes: 0.4.3
@@ -7367,8 +7367,8 @@ packages:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  /rc-field-form/1.27.2_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-NaTjkSB8JsHRgm52wkDorsDzFf2HH6GmCQ2AqkwO8zo+zIqybw8K1lkzDBMDJI8nw1pFuD46U5QsYZv4blYvdw==}
+  /rc-field-form/1.27.3_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-HGqxHnmGQgkPApEcikV4qTg3BLPC82uB/cwBDftDt1pYaqitJfSl5TFTTUMKVEJVT5RqJ2Zi68ME1HmIMX2HAw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: '>=16.9.0'
