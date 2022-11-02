@@ -34,7 +34,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "ahooks": "^3.7.2",
-    "antd-mobile": "^5.25.0",
+    "antd-mobile": "^5.25.1",
     "axios": "^0.27.2",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.6",
