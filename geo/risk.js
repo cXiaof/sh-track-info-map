@@ -12,8 +12,11 @@ const sleep = (time) => {
 
 const geoRisk = async () => {
   const risk = await fs.readJson('public/source/risk.json')
+  console.log('✔ 读取风险数据')
   const collection = await getGeoCollection(risk)
+  console.log('✔ 查询风险信息')
   await fs.writeFile('public/data/risk.geojson', JSON.stringify(collection))
+  console.log('✔ 更新风险文件')
 }
 
 const getGeoCollection = async (risk) => {

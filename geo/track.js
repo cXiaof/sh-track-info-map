@@ -16,15 +16,20 @@ const sleep = (time) => {
 
 const geoTrackToday = async () => {
   const track = await fs.readJson('public/source/track.json')
+  console.log('✔ 读取轨迹数据')
   const trackToday = track[today]
   if (trackToday) {
     const collection = await getGeoCollection(trackToday)
+    console.log('✔ 查询轨迹信息')
     await updateTrackGeoJSON(collection)
   } else {
     await updateTrackGeoJSON()
   }
+  console.log('✔ 更新轨迹文件')
   await splitJSON()
+  console.log('✔ 轨迹分类')
   updateLastUpdateTime()
+  console.log('✔ 更新日期')
 }
 
 const getGeoCollection = async (data) => {
