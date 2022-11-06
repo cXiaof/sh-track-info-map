@@ -1,4 +1,61 @@
 {
+  "2022-11-06": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.763029, 30.956476]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "大团镇海潮村",
+          "geocoded_address": "上海市浦东新区海潮村",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.785641, 30.959516]
+        },
+        "properties": {
+          "town": "浦东新区",
+          "published_address": "大团镇金石村",
+          "geocoded_address": "上海市浦东新区金石村",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.436785, 31.221714]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "愚园路608弄",
+          "geocoded_address": "上海市静安区愚园路608弄",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.395829, 31.231078]
+        },
+        "properties": {
+          "town": "普陀区",
+          "published_address": "金沙江路895弄",
+          "geocoded_address": "上海市普陀区金沙江路895弄",
+          "date": 1667692800000
+        }
+      }
+    ]
+  },
   "2022-11-04": {
     "type": "FeatureCollection",
     "features": [
