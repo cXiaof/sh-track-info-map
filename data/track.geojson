@@ -45,6 +45,45 @@
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [121.46335, 31.253657]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "中华新路583号",
+          "geocoded_address": "上海市普陀区中华新路|583",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.464011, 31.250437]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "共和新路435号",
+          "geocoded_address": "上海市静安区共和新路435号",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.466062, 31.257178]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "芷江西路50号",
+          "geocoded_address": "上海市静安区芷江西路50号",
+          "date": 1667692800000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [121.395829, 31.231078]
         },
         "properties": {
