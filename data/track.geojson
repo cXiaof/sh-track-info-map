@@ -1,4 +1,48 @@
 {
+  "2022-11-08": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.454104, 31.231763]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "江宁路239号",
+          "geocoded_address": "上海市静安区江宁路239号",
+          "date": 1667865600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.449607, 31.304646]
+        },
+        "properties": {
+          "town": "静安区",
+          "published_address": "共和新路3703号",
+          "geocoded_address": "上海市静安区共和新路3703号",
+          "date": 1667865600000
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.162963, 31.293947]
+        },
+        "properties": {
+          "town": "嘉定区",
+          "published_address": "墨玉路82号",
+          "geocoded_address": "上海市嘉定区墨玉路82号",
+          "date": 1667865600000
+        }
+      }
+    ]
+  },
   "2022-11-06": {
     "type": "FeatureCollection",
     "features": [
