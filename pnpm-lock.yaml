@@ -21,14 +21,14 @@ specifiers:
   open-color: ^1.9.1
   postcss: ^8.4.18
   prettier: ^2.7.1
-  prettier-plugin-organize-imports: ^3.1.1
+  prettier-plugin-organize-imports: ^3.2.0
   prettier-plugin-packagejson: ^2.3.0
   react: ^17.0.2
   react-app-alias: ^2.2.2
   react-dom: ^17.0.2
   react-scripts: 5.0.1
   sass: ^1.56.1
-  tailwindcss: ^3.2.2
+  tailwindcss: ^3.2.3
   typescript: ~4.6.4
   web-vitals: ^2.1.0
 
@@ -59,11 +59,11 @@ devDependencies:
   open-color: 1.9.1
   postcss: 8.4.18
   prettier: 2.7.1
-  prettier-plugin-organize-imports: 3.1.1_hxiikqca7u3owqcguxhaa72gu4
+  prettier-plugin-organize-imports: 3.2.0_hxiikqca7u3owqcguxhaa72gu4
   prettier-plugin-packagejson: 2.3.0_prettier@2.7.1
   react-app-alias: 2.2.2
   sass: 1.56.1
-  tailwindcss: 3.2.2_postcss@8.4.18
+  tailwindcss: 3.2.3_postcss@8.4.18
   typescript: 4.6.4
 
 packages:
@@ -7229,13 +7229,16 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier-plugin-organize-imports/3.1.1_hxiikqca7u3owqcguxhaa72gu4:
-    resolution: {integrity: sha512-6bHIQzybqA644h0WGUW3gpWEVbMBvzui5wCMRBi7qA++d5ov2xjjfDk8pxJJ/ardfZrGAwizKMq/fQMFdJ+0Zw==}
+  /prettier-plugin-organize-imports/3.2.0_hxiikqca7u3owqcguxhaa72gu4:
+    resolution: {integrity: sha512-jeZ13YVKgXYCzkuwnoR6saKxJmdRYWMxS2G/su1V3qDWqTo1Q5iSoTblBxsXXAmomXfPqa/uA7YCK0/S86KLOQ==}
     peerDependencies:
-      '@volar/vue-typescript': '>=0.40.2'
+      '@volar/vue-language-plugin-pug': ^1.0.4
+      '@volar/vue-typescript': ^1.0.4
       prettier: '>=2.0'
       typescript: '>=2.9'
     peerDependenciesMeta:
+      '@volar/vue-language-plugin-pug':
+        optional: true
       '@volar/vue-typescript':
         optional: true
     dependencies:
@@ -7530,7 +7533,7 @@ packages:
       semver: 7.3.7
       source-map-loader: 3.0.1_webpack@5.74.0
       style-loader: 3.3.1_webpack@5.74.0
-      tailwindcss: 3.2.2_postcss@8.4.18
+      tailwindcss: 3.2.3_postcss@8.4.18
       terser-webpack-plugin: 5.3.6_webpack@5.74.0
       typescript: 4.6.4
       webpack: 5.74.0
@@ -8314,8 +8317,8 @@ packages:
   /symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  /tailwindcss/3.2.2_postcss@8.4.18:
-    resolution: {integrity: sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q==}
+  /tailwindcss/3.2.3_postcss@8.4.18:
+    resolution: {integrity: sha512-Xt9D4PK4zuuQCEB8bwK9JUCKmTgUwyac/6b0/42Vqhgl6YJkep+Wf5wq+5uXYfmrupdAD0YY2NY1hyZp1HjRrg==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
