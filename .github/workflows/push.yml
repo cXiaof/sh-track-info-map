@@ -1,11 +1,11 @@
-name: Build and Deploy
+name: Build and Deploy (ubuntu)
 on:
   push:
     branches:
       - main
 jobs:
-  build:
-    runs-on: windows-latest
+  deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,26 +26,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: site
-          path: build
-
-  deploy:
-    concurrency: ci-${{ github.ref }}
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Download Artifacts
-        uses: actions/download-artifact@v1
-        with:
-          name: site
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: 'site'
+          folder: build
